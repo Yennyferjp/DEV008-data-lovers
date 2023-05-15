@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>delieTaste</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dely Taste</title>
+  <link rel="shortcut icon" href="img/Diseño.png">
   <link rel="stylesheet" href="style.css" />
-
-  <!-- FONT GOOGLE  -->
+  
+    <!-- FONT GOOGLE  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
 
   <!-- FONT AWESOME -->
-
   <script src="https://kit.fontawesome.com/5aceb7e347.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-  <nav>
+ <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       <i class="fa-solid fa-bars"></i>
@@ -41,16 +42,66 @@
       </form> 
     </nav>
   </header>
+  <main>
+    <section id="filtrar">
+      <img src="img/Logo delieTast.png" id="logo" width="310px">
+      <p> Traemos en cada plato ingredientes cuidadosamente
+        seleccionados, tratados con amor e inspirados en la belleza natural de nuestros campos con toda su riqueza
+        mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p>
+      <select name="category" id="ct">
+        <option value="entradas">Entradas</option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="golang">Golang</option>
 
-  <div id="search-results">
-    <!-- Aquí se mostrarán los resultados de búsqueda -->
-  </div>
+      </select>
+      <select name="category" id="ct">
+        <option value="fuertes">Fuertes</option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="golang">Golang</option>
 
-  <div id="root">
-    <!-- Contenido de la página -->
-  </div>
+      </select>
+      <select name="category" id="ct">
+        <option value="postres">Postres</option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="golang">Golang</option>
 
+      </select>
+
+      <select name="category" id="ct">
+        <option value="bebidas">Bebidas </option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="golang">Golang</option>
+
+      </select>
+    </section>
+  </main>
+  <section>
+    <div>
+      <h2>
+        Nuestro Menu
+      </h2>
+    </div>
+  </section>
+  <section>
+    <div>ABOUT</div>
   
+  </section>
+  <section>
+    <div>
+      <h2>
+        contactenos 
+      </h2>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <p>Copyright &copy; Data-Lovers , todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <script src="main.js" type="module"></script>
 </body>
