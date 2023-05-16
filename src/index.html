@@ -5,81 +5,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dely Taste</title>
+  <title>Delie Taste</title>
   <link rel="shortcut icon" href="img/Diseño.png">
   <link rel="stylesheet" href="style.css" />
-  
-    <!-- FONT GOOGLE  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- FONT GOOGLE  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Yenn 16may 2023 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Yenn 16may 2023 -->
   <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+  <!-- Yenn 16may 2023 -->
 
   <!-- FONT AWESOME -->
-  <script src="https://kit.fontawesome.com/5aceb7e347.js" crossorigin="anonymous"></script>
-</head>
+  <script src="https://kit.fontawesome.com/5aceb7e347.js" crossorigin="anonymous"></script> <!-- Yenn 16may 2023 -->
+</head> <!-- Yenn 16may 2023 -->
 
-<body>
- <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fa-solid fa-bars"></i>
-    </label>
-  <header class="header">
-    <div class="logo">
-      <a href="#" class="enlace">
-        <img src="delietaste1.png" alt="logo del restaurante">
-      </a>
-    </div>
-      <ul class="nav-links" id="main-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <form action="" method="get">
-        <input type="text" name="query" placeholder="Buscar...">
-        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </form> 
-    </nav>
-  </header>
+<body> <!-- Yenn 16may 2023 -->
+
+  <header> <!-- Yenn 16may 2023 -->
+    <div class="header__superior"> <!-- Yenn 16may 2023 -->
+      <div class="logo"> <!-- Yenn 16may 2023 -->
+        <img src="delietaste1.png" alt=""> <!-- Yenn 16may 2023 -->
+      </div> <!-- Yenn 16may 2023 -->
+      <div class="search"> <!-- Yenn 16may 2023 -->
+        <input type="search" placeholder="¿Qué deseas buscar?"> <!-- Yenn 16may 2023 -->
+      </div><!-- Yenn 16may 2023 -->
+    </div><!-- Yenn 16may 2023 -->
+    <div class="container__menu"> <!-- Yenn 16may 2023 -->
+      <div class="menu"> <!-- Yenn 16may 2023 -->
+        <input type="checkbox" id="check__menu"> <!-- Yenn 16may 2023 -->
+        <label for="check__menu" id="label__check"> <!-- Yenn 16may 2023 -->
+          <i class="fas fa-bars icon__menu"></i> <!-- Yenn 16may 2023 -->
+        </label> <!-- Yenn 16may 2023 -->
+        <nav> <!-- Yenn 16may 2023 -->
+          <ul> <!-- Yenn 16may 2023 -->
+            <li><a href="#" id="selected"></a></li> <!-- Yenn 16may 2023 -->
+            <li><a href="#">Menu</a></li> <!-- Yenn 16may 2023 -->
+            <li><a href="#">About</a></li> <!-- Yenn 16may 2023 -->
+            <li><a href="#">Contact</a></li> <!-- Yenn 16may 2023 -->
+          </ul> <!-- Yenn 16may 2023 -->
+        </nav> <!-- Yenn 16may 2023 -->
+      </div> <!-- Yenn 16may 2023 -->
+    </div> <!-- Yenn 16may 2023 -->
+
+  </header> <!-- Yenn 16may 2023 -->
   <main>
-    <section id="filtrar">
-      <img src="img/Logo delieTast.png" id="logo" width="310px">
-      <p> Traemos en cada plato ingredientes cuidadosamente
-        seleccionados, tratados con amor e inspirados en la belleza natural de nuestros campos con toda su riqueza
-        mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p>
-      <select name="category" id="ct">
-        <option value="entradas">Entradas</option>
-        <option value="php">PHP</option>
-        <option value="java">Java</option>
-        <option value="golang">Golang</option>
+    <center> <!-- Yenn 16may 2023 -->
+      <section id="filtrar">
+        <img src="img/Logo delieTast.png" id="logo" width="310px">
+        <p> Traemos en cada plato ingredientes cuidadosamente
+          seleccionados, tratados con amor e inspirados en la belleza natural de nuestros campos con toda su riqueza
+          mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p>
+        <select name="category" id="ct">
+          <option value="entradas">Entradas</option>
+          <option value="php">PHP</option>
+          <option value="java">Java</option>
+          <option value="golang">Golang</option>
 
-      </select>
-      <select name="category" id="ct">
-        <option value="fuertes">Fuertes</option>
-        <option value="php">PHP</option>
-        <option value="java">Java</option>
-        <option value="golang">Golang</option>
+        </select>
+        <select name="category" id="ct">
+          <option value="fuertes">Fuertes</option>
+          <option value="php">PHP</option>
+          <option value="java">Java</option>
+          <option value="golang">Golang</option>
 
-      </select>
-      <select name="category" id="ct">
-        <option value="postres">Postres</option>
-        <option value="php">PHP</option>
-        <option value="java">Java</option>
-        <option value="golang">Golang</option>
+        </select>
+        <select name="category" id="ct">
+          <option value="postres">Postres</option>
+          <option value="php">PHP</option>
+          <option value="java">Java</option>
+          <option value="golang">Golang</option>
 
-      </select>
+        </select>
 
-      <select name="category" id="ct">
-        <option value="bebidas">Bebidas </option>
-        <option value="php">PHP</option>
-        <option value="java">Java</option>
-        <option value="golang">Golang</option>
+        <select name="category" id="ct">
+          <option value="bebidas">Bebidas </option>
+          <option value="php">PHP</option>
+          <option value="java">Java</option>
+          <option value="golang">Golang</option>
 
-      </select>
-    </section>
+        </select>
+      </section>
   </main>
   <section>
+    </center> <!-- Yenn 16may 2023 -->
+
     <div>
       <h2>
         Nuestro Menu
@@ -88,14 +97,13 @@
   </section>
   <section>
     <div>ABOUT</div>
-  
+
   </section>
-  <section>
-    <div>
-      <h2>
-        contactenos 
-      </h2>
+
+  <section id="testimonials">
+    <div id="testimoniosContainer" class="carousel slide" data-ride="false">
     </div>
+      
   </section>
   <footer>
     <div class="footer">
@@ -104,6 +112,7 @@
   </footer>
 
   <script src="main.js" type="module"></script>
+  <script src="data.js" async type="module"></script>
 </body>
 
 </html>

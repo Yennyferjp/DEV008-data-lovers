@@ -1,0 +1,16 @@
+{
+    "carousel": [
+      {
+        "name": "Catalina Ortiz Giraldo",
+        "rating": "⭐⭐⭐⭐⭐",
+        "testimonial": "Altamente grato. Muy buena carta de cocina, con un sabor que sorprende y deleita el paladar. Entradas, platos principales y bebidas, no tienen pierde! Además de ser un lugar bonito, el servicio al cliente supera expectativas.",
+        "image": "CatalinaOrtiz.jpg"
+      },
+      {
+        "name": "Luis Manuel Gomez.",
+        "rating": "⭐⭐⭐⭐⭐",
+        "testimonial": "Que buen lugar en general. Muy recomendado para ir en pareja o amigos. Es un restaurante con un ambiente muy tranquilo y agradable. La comida estaba genial en todo sentido y la atención ni hablar de lo perfecta y atenta. Los precios son justos.",
+        "image": "LuisManuelG.jpg"
+      }
+    ]
+  }
