@@ -1,182 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-size: 20px;
+    margin: 0;  /*Yenn 16 May2023*/
+    padding: 0; /*Yenn 16 May2023*/
+    box-sizing: border-box; /*Yenn 16 May2023*/
+    font-family: 'Source Sans 3', sans-serif; /*Yenn 16 May2023*/
+    text-decoration: none; /*Yenn 16 May2023*/
+} 
+
+header {
+    width: 100%; /*Yenn 16 May2023*/
+    position: fixed; /*Yenn 16 May2023*/
+    top: 0; /*Yenn 16 May2023*/
+    left: 0; /*Yenn 16 May2023*/
+    background:  #9F7D53; /*Yenn 16 May2023*/
 }
 
-html {
-    height: 100%;
-    width: 100%;
+/*HEADER SUPERIOR*/
+
+.header__superior { /*Yenn 16 May2023*/
+    max-width: 1250px; /*Yenn 16 May2023*/
+    margin: auto; /*Yenn 16 May2023*/
+    display: flex; /*Yenn 16 May2023*/
+    align-items: center; /*Yenn 16 May2023*/
+    justify-content: space-between; /*Yenn 16 May2023*/
+    padding: 10px; /*Yenn 16 May2023*/
 }
 
-body {
-
-    text-align: center;
+.logo img {
+    width: 200px; /*Yenn 16 May2023*/
 }
 
-
-/* Header */
-
-.header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 85px;
-    padding: 30px 10%;
-    margin: 2%
+.search input {
+    width: 300px; /*Yenn 16 May2023*/
+    padding: 10px; /*Yenn 16 May2023*/
 }
 
-.header .logo {
-    cursor: pointer;
-    margin-right: auto;
+/*BARRA MENU*/
+
+.container__menu {
+    width: 100%; /*Yenn 16 May2023*/
+    height: 60px; /*Yenn 16 May2023*/
+    background: #997850; /*Yenn 16 May2023*/
+    padding: 0px 20px; /*Yenn 16 May2023*/
 }
 
-.header .logo img {
-    width: 50%;
-    margin-top: 5%;
-    transition: all 0.3s;
+.menu {
+    max-width: 1200px; /*Yenn 16 May2023*/
+    margin: auto; /*Yenn 16 May2023*/
+    height: 100%; /*Yenn 16 May2023*/
 }
 
-.header .logo img:hover {
-    transform: scale(1.2);
+nav {
+    height: 100%; /*Yenn 16 May2023*/
 }
 
-.header .nav-links {
-    list-style: none;
+nav>ul {
+    height: 100%; /*Yenn 16 May2023*/
+    display: flex; /*Yenn 16 May2023*/
 }
 
-.header .nav-links li {
-    display: inline-block;
-    padding: 0 50px;
+nav ul li {
+    height: 100%; /*Yenn 16 May2023*/
+    list-style: none; /*Yenn 16 May2023*/
+    position: relative; /*Yenn 16 May2023*/
 }
 
-.header .nav-links li:hover {
-    transform: scale(1.1);
+nav>ul>li:first-child>a {
+    background-image: url(./img/home.png); /*Yenn 16 May2023*/
+    background-size: 24px; /*Yenn 16 May2023*/
+    background-repeat: no-repeat; /*Yenn 16 May2023*/
+    background-position: center center; /*Yenn 16 May2023*/
+    padding: 20px 40px; /*Yenn 16 May2023*/
 }
 
-.header .nav-links a {
-    font-size: 20px;
-    color: #66645f;
-    text-decoration: none;
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-shadow: 0.5px 0.5px 0.5px rgb(170, 166, 166);
+nav>ul>li:first-child:hover>a {
+    background-image: url(./img/home.png); /*Yenn 16 May2023*/
+    background-size: 24px; /*Yenn 16 May2023*/
+    background-repeat: no-repeat; /*Yenn 16 May2023*/
+    background-position: center center; /*Yenn 16 May2023*/
 }
 
-.header .nav-links li a:hover {
-    color: #ffbc0e;
+nav>ul>li>a {
+    width: 100%; /*Yenn 16 May2023*/
+    height: 100%;/*Yenn 16 May2023*/
+    display: flex; /*Yenn 16 May2023*/
+    align-items: center; /*Yenn 16 May2023*/
+    padding: 14px; /*Yenn 16 May2023*/
+    color: white; /*Yenn 16 May2023*/
+    text-transform: uppercase; /*Yenn 16 May2023*/
+    font-size: 14px; /*Yenn 16 May2023*/
+    transition: all 300ms ease; /*Yenn 16 May2023*/
 }
 
-.header .btn button {
-    margin-left: 20px;
-    font-weight: 700;
-    color: #aeaba2;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+nav>ul>li>a:hover {
+    transform: scale(1.1); /*Yenn 16 May2023*/
+    background: #C7853A; /*Yenn 16 May2023*/
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /*Yenn 16 May2023*/
 }
 
-.header .btn button:hover {
-    background-color: #e2f1f8;
-    color: #ffbc0e;
-    transform: scale(1.1);
-}
-
-/* Boton de busqueda */
-
-form {
-    display: flex;
-    align-items: center;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-left: 50px;
-}
-
-button[type="submit"] {
-
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10px;
-
-
+#selected {
+    transform: scale(1.1); /*Yenn 16 May2023*/
+    background-color: #FBCB94; /*Yenn 16 May2023*/
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /*Yenn 16 May2023*/
 }
 
 
-.checkbtn {
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    width: auto;
-    cursor: pointer;
-    display: none;
+/*SUBMENU*/
 
+nav ul li ul {
+    width: 200px; /*Yenn 16 May2023*/
+    display: flex; /*Yenn 16 May2023*/
+    flex-direction: column; /*Yenn 16 May2023*/
+    background: #fff; /*Yenn 16 May2023*/
+    position: absolute; /*Yenn 16 May2023*/
+    top: 90px; /*Yenn 16 May2023*/
+    left: -5px; /*Yenn 16 May2023*/
+    padding: 14px 0px; /*Yenn 16 May2023*/
+    visibility: hidden; /*Yenn 16 May2023*/
+    opacity: 0; /*Yenn 16 May2023*/
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /*Yenn 16 May2023*/
+    z-index: 10; /*Yenn 16 May2023*/
+    transition: all 300ms ease; /*Yenn 16 May2023*/
 }
 
-#check {
-    display: none;
+nav ul li:hover ul { /*Yenn 16 May2023*/
+    visibility: visible; /*Yenn 16 May2023*/
+    opacity: 1; /*Yenn 16 May2023*/
+    top: 70px; /*Yenn 16 May2023*/
+}
+
+nav ul li ul:before {
+    content: ''; /*Yenn 16 May2023*/
+    width: 0; /*Yenn 16 May2023*/
+    height: 0; /*Yenn 16 May2023*/
+    border-left: 12px solid transparent; /*Yenn 16 May2023*/
+    border-right: 12px solid transparent; /*Yenn 16 May2023*/
+    border-bottom: 12px solid white; /*Yenn 16 May2023*/
+    position: absolute; /*Yenn 16 May2023*/
+    top: -12px; /*Yenn 16 May2023*/
+    left: 20px; /*Yenn 16 May2023*/
+}
+
+nav ul li ul li a {
+    display: block; /*Yenn 16 May2023*/
+    color: black; /*Yenn 16 May2023*/
+    padding: 6px; /*Yenn 16 May2023*/
+    padding-left: 14px; /*Yenn 16 May2023*/
+    margin-top: 10px; /*Yenn 16 May2023*/
+    font-size: 14px; /*Yenn 16 May2023*/
+    text-transform: uppercase; /*Yenn 16 May2023*/
+    transition: all 300ms ease; /*Yenn 16 May2023*/
+}
+
+nav ul li ul li a:hover {
+    background: black; /*Yenn 16 May2023*/
+    color: #fff; /*Yenn 16 May2023*/
+    transform: scale(1.2); /*Yenn 16 May2023*/
+    padding-left: 30px; /*Yenn 16 May2023*/
+    font-size: 14px; /*Yenn 16 May2023*/
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /*Yenn 16 May2023*/
+}
+
+/*ARTICULO*/
+
+main {
+   
+    margin-top: 5px; /*Yenn 16 May2023*/
+}
+
+article {
+    max-width: 1200px; /*Yenn 16 May2023*/
+    margin: 20px auto; /*Yenn 16 May2023*/
+    padding: 40px; /*Yenn 16 May2023*/
+    background: #fff; /*Yenn 16 May2023*/
+}
+
+article p {
+    margin-top: 20px; /*Yenn 16 May2023*/
+    font-size: 18px; /*Yenn 16 May2023*/
+    font-weight: 300; /*Yenn 16 May2023*/
 }
 
 
+main {
+    margin-top: 158px; /*Yenn 16 May2023*/
+}
 
-@media screen and (max-width: 952px) {
-    .enlace {
-        padding-left: 20px;
+/*ELEMENTOS RESPONSIVOS*/
+
+.icon__menu {
+    font-size: 26px; /*Yenn 16 May2023*/
+    color: white; /*Yenn 16 May2023*/
+    cursor: pointer; /*Yenn 16 May2023*/
+    width: 26px; /*Yenn 16 May2023*/
+    height: 100%; /*Yenn 16 May2023*/
+    display: none; /*Yenn 16 May2023*/
+    align-items: center; /*Yenn 16 May2023*/
+}
+
+#label__check {
+    width: 26px; /*Yenn 16 May2023*/
+    height: 100%; /*Yenn 16 May2023*/
+    display: none; /*Yenn 16 May2023*/
+}
+
+#check__menu {
+    display: none; /*Yenn 16 May2023*/
+}
+
+@media screen and (max-width: 720px) {
+
+    .header__superior {
+        padding: 10px; /*Yenn 16 May2023*/
     }
 
-    .header .nav-links a {
-        display: none;
-        flex-direction: column;
-
+    .logo img {
+        width: 200px; /*Yenn 16 May2023*/
     }
 
-}
-
-@media (max-width: 768px) {
-    .checkbtn {
-        display: block;
+    nav>ul {
+        flex-direction: column; /*Yenn 16 May2023*/
+        background-color: #D9A557; /*Yenn 16 May2023*/
+        position: fixed; /*Yenn 16 May2023*/
+        left: 0; /*Yenn 16 May2023*/
+        top: 158px; /*Yenn 16 May2023*/
+        width: 100%; /*Yenn 16 May2023*/
+        height: 0px; /*Yenn 16 May2023*/
+        transition: all 300ms ease; /*Yenn 16 May2023*/
+        z-index: 100; /*Yenn 16 May2023*/
+        opacity: 0; /*Yenn 16 May2023*/
+        visibility: hidden; /*Yenn 16 May2023*/
     }
 
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: coral;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-
+    nav>ul>li>a:hover {
+        transform: scale(1); /*Yenn 16 May2023*/
     }
 
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
 
+    nav ul li ul {
+        left: 90px; /*Yenn 16 May2023*/
     }
 
-    nav ul li a {
-        font-size: 20px;
+    nav>ul>li:hover ul {
+        top: 50px; /*Yenn 16 May2023*/
+    }
+
+    nav>ul>li:first-child a {
+        background-position: 20px; /*Yenn 16 May2023*/
+    }
+
+    #selected {
+        transform: scale(1); /*Yenn 16 May2023*/
+    }
+
+    #label__check {
+        display: block; /*Yenn 16 May2023*/
+    }
+
+    .icon__menu {
+        display: flex; /*Yenn 16 May2023*/
+    }
+
+    #check__menu:checked~nav>ul {
+        height: 300px; /*Yenn 16 May2023*/
+        visibility: visible; /*Yenn 16 May2023*/
+        opacity: 1; /*Yenn 16 May2023*/
     }
 
 }
@@ -185,6 +277,7 @@ button[type="submit"] {
     padding: 30px;
     background-color: #FFF9EA;
     display: block;
+    text-align: center;
 }
 
 section>p {
@@ -224,3 +317,59 @@ footer {
     display: flex;
 }
 
+
+/*TESTIMONIOS*/
+
+#testimonials{
+    color: #73695E;
+}
+
+.carousel{
+    padding: 2% 15%;
+    text-align: center;
+}
+
+.testimonios {
+    width: 20%;
+    margin: 7% 10px;
+    float: left; 
+}
+
+.carousel-item {
+    width: 40%;
+    padding: 1% 0;
+    margin-left: 70%;
+}
+
+.container_testimonios {
+    background-color: #F4E1C8;
+    border: solid #9F7D53;
+    
+}
+
+.fonth4 {
+    text-align: left;
+    margin-left: 3%;
+    
+}
+
+p {
+    text-align: left;
+    margin: 0 3%;
+}
+ 
+
+    
+
+@media screen and (max-width: 806px){
+    #testimonials {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .carousel-item {
+        margin: 0;
+        width: auto;
+
+    }
+}
