@@ -47,7 +47,7 @@ fetch('testimonios.json')
 
     // Agregar imagen al div
     const bannertestimonio = document.createElement('img');
-    bannertestimonio.src = 'imgbanner.png';
+    bannertestimonio.src = './img/imgbanner.png';
     bannertestimonio.width = '310px';
 
     bannertestimonioDiv.appendChild(bannertestimonio);

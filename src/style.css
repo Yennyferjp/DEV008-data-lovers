@@ -70,7 +70,7 @@ nav ul li {
 }
 
 nav>ul>li:first-child>a {
-    background-image: url(home.png); /*Yenn 16 May2023*/
+    background-image: url(./img/home.png); /*Yenn 16 May2023*/
     background-size: 24px; /*Yenn 16 May2023*/
     background-repeat: no-repeat; /*Yenn 16 May2023*/
     background-position: center center; /*Yenn 16 May2023*/
@@ -78,7 +78,7 @@ nav>ul>li:first-child>a {
 }
 
 nav>ul>li:first-child:hover>a {
-    background-image: url(home.png); /*Yenn 16 May2023*/
+    background-image: url(./img/home.png); /*Yenn 16 May2023*/
     background-size: 24px; /*Yenn 16 May2023*/
     background-repeat: no-repeat; /*Yenn 16 May2023*/
     background-position: center center; /*Yenn 16 May2023*/
@@ -277,37 +277,46 @@ main {
     padding: 30px;
     background-color: #FFF9EA;
     display: block;
-    /* margin-top: 20%; */
+    text-align: center;
 }
 
 section>p {
+    text-align: center;
     margin-right: 25%;
     margin-left: 25%;
     justify-content: center;
 }
 
 #ct {
-
+    cursor: pointer;
     box-sizing: border-box;
     flex-direction: row;
     align-items: center;
-    padding: 14px;
-    gap: 171px;
+    padding: 15px;
+    gap: 181px;
     width: 150px;
-    height: 51.93px;
+    height: 53px;
     background: #FFAC4B;
     border: 1px solid #AAAAAA;
     border-radius: 8px;
 }
 
-footer {
-    background-image: url(img/Logo\ delieTast.png);
-    background: no-repeat;
-    font-size: 20px;
-    padding: 48px;
-    background-color: #FFF9EA;
-
+#filtro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+footer {
+   font-size: 20px;
+    padding: 18px;
+    background-color: #FFF9EA;
+}
+
+#logo{
+    display: flex;
+}
+
 
 /*TESTIMONIOS*/
 
@@ -364,6 +373,3 @@ p {
 
     }
 }
-
-
-    
