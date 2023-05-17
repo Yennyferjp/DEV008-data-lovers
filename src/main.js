@@ -9,11 +9,6 @@ console.log("mimenu", menu)
 
 // console.log(example, data);
 
-function toggleNav() {
-
-  var navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('nav-active');
-}
 // Cmbio tati - 16 -creo un arreglo con las categorias 
 const categorias = [
   "Entradas", "Fuertes", "Postres", "Bebidas"
