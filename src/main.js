@@ -1,33 +1,118 @@
-// import { example } from './data.js';
-// import data from './data/lol/lol.js';
-// import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-import data from './data/menu/menu.js'
-//importo la data del menu 
-const menu = data.menu;
-console.log("mimenu", menu)
+import menuArreglo from './data.js'
 
-// console.log(example, data);
+let categorias = []
+
+menuArreglo.forEach((producto) =>{
+  if (!categorias.includes(producto.categoryType)) {
+    categorias.push(producto.categoryType)
+  }
+})
 
 // Cmbio tati - 16 -creo un arreglo con las categorias 
-const categorias = [
-  "Entradas", "Fuertes", "Postres", "Bebidas"
-]
-
 categorias.forEach(c => {
   const section = document.getElementById("filtro")
 
-  const p = document.createElement("p");
+  const titulo =document.createElement("h3")
   const select = document.createElement("select");
+  var br = document.createElement("br");
   select.setAttribute("name", "category")
   select.setAttribute("id", "ct")
 
   const option = document.createElement("option");
   option.setAttribute("value", "entradas")
 
-  option.innerHTML = c;
+  titulo.innerHTML = c ;
 
   select.appendChild(option);
+  section.appendChild(titulo);
+  section.appendChild(br);
   section.appendChild(select);
+
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//cambio de lugar data.js de yenny 
+fetch('testimonios.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    const testimoniosContainer = document.getElementById('testimoniosContainer');
+
+    // Iterar sobre cada testimonio en los datos JSON
+    data.carousel.forEach(function(testimonio, index) {
+      // Crear elementos HTML para mostrar los datos del testimonio
+      const carouselItem = document.createElement('div');
+      carouselItem.classList.add('carousel-item');
+      if (index === 0) {
+        carouselItem.classList.add('active');
+      }
+
+      const containerTestimonios = document.createElement('div');
+      containerTestimonios.classList.add('container_testimonios');
+
+      const imagen = document.createElement('img');
+      imagen.classList.add('testimonios');
+      imagen.src = testimonio.image;
+      imagen.alt = testimonio.name;
+
+      const nombre = document.createElement('h4');
+      nombre.classList.add('fonth4');
+      nombre.innerHTML = testimonio.name + " <br> " + testimonio.rating;
+
+      const mensaje = document.createElement('p');
+      mensaje.classList.add('parrafo-testimonio');
+      mensaje.textContent = testimonio.testimonial;
+
+      containerTestimonios.appendChild(imagen);
+      containerTestimonios.appendChild(document.createElement('br'));
+      containerTestimonios.appendChild(nombre);
+      containerTestimonios.appendChild(mensaje);
+      containerTestimonios.appendChild(document.createElement('br'));
+
+      carouselItem.appendChild(containerTestimonios);
+
+      testimoniosContainer.appendChild(carouselItem);
+    });
+
+    // Agregar div con el ID "bannertestimonio"
+    const bannertestimonioDiv = document.createElement('div');
+    bannertestimonioDiv.id = 'bannertestimonio';
+
+    // Agregar imagen al div
+    const bannertestimonio = document.createElement('img');
+    bannertestimonio.src = './img/imgbanner.png';
+    bannertestimonio.width = '310px';
+
+    bannertestimonioDiv.appendChild(bannertestimonio);
+
+    const bannerContainer = document.querySelector('.bannerimg-testimonios');
+    bannerContainer.appendChild(bannertestimonioDiv);
+  });
+////////////////////////////////////////////////////////////////////////////////////////
