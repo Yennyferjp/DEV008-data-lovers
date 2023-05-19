@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Pollo Thai",
       "category": "Recomendado del Día",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "description": "Pollo Thai + Acompañamiento + Bebida",
       "isAvailable": true,
       "active": false,
@@ -27,10 +27,10 @@
     {
       "id": 2,
       "category": "Recomendados Del Chef",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Combo Full",
       "store_id": "16438",
-      "description": "Escoje 1 Bowl + 1  sopa + bebida",
+      "description": "Escoje 1 Bowl + 1  sopa + Bebida",
       "externalId": null,
       "isAvailable": true,
       "active": false,
@@ -53,10 +53,10 @@
     {
       "id": 3,
       "category": "Recomendados Del Chef",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Combo para Dos",
       "store_id": "16438",
-      "description": "Escoje 2 bowls + 2 acompañamientos + 2 bebidas",
+      "description": "Escoje 2 bowls + 2 acompañamientos + 2 Bebidas",
       "externalId": null,
       "isAvailable": true,
       "active": false,
@@ -79,7 +79,7 @@
     {
       "id": 4,
       "category": "Recomendados Del Chef",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Bowl Macondo",
       "store_id": "16438",
       "description": "Bowl de carne desmechada al estilo criollo con crema agria y cilantro acompañado de puré de plátano.",
@@ -105,7 +105,7 @@
     {
       "id": 5,
       "category": "Recomendados Del Chef",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Tostada de Trucha",
       "store_id": "16438",
       "description": "Tostada de pan sourdough con queso crema, aguacate, tomate uvalina, trucha, alcaparras fritas, plumas de cebolla morada, terminado con eneldo.",
@@ -131,7 +131,7 @@
     {
       "id": 6,
       "category": "Recomendados Del Chef",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sándwich Pulled Pork",
       "store_id": "16438",
       "description": "Sándwich de cerdo desmenuzado en salsa bbq, ensalada de repollo y pepinillos, acompañado de chips de yuca y plátano con salsa ranch.",
@@ -157,7 +157,7 @@
     {
       "id": 7,
       "category": "Recomendados Del Chef",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Soda de Gulupa",
       "store_id": "16438",
       "description": "Soda de gulupa de la casa.",
@@ -183,7 +183,7 @@
     {
       "id": 8,
       "category": "Recomendados Del Chef",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Combo 1/2",
       "store_id": "16438",
       "description": "Elige 1/2 Sandwich + 1 sopa ",
@@ -209,7 +209,7 @@
     {
       "id": 9,
       "category": "Para Compartir",
-      "categoryType": "entrada",
+      "categoryType": "Entrada",
       "name": "Tostada de Aguacate",
       "store_id": "16438",
       "description": "Pan sourdough con guacamole, queso feta, tomate uvalina y garbanzos crocantes.",
@@ -235,7 +235,7 @@
     {
       "id": 10,
       "category": "Para Compartir",
-      "categoryType": "entrada",
+      "categoryType": "Entrada",
       "name": "Burrata",
       "store_id": "16438",
       "description": "Burrata bañada en salsa pesto con tomates secos y uvalina, rúgula, reducción de balsámico y crutones.",
@@ -261,7 +261,7 @@
     {
       "id": 11,
       "category": "Para Compartir",
-      "categoryType": "entrada",
+      "categoryType": "Entrada",
       "name": "Guacamole y Totopos",
       "store_id": "16438",
       "description": "Guacamole con totopos para compartir.",
@@ -287,7 +287,7 @@
     {
       "id": 12,
       "category": "Para Compartir",
-      "categoryType": "entrada",
+      "categoryType": "Entrada",
       "name": "Hummus y Falafel",
       "store_id": "16438",
       "description": "Dip de garbanzos con falafel, garbanzos crocantes y pan pita.",
@@ -313,7 +313,7 @@
     {
       "id": 13,
       "category": "Para Compartir",
-      "categoryType": "entrada",
+      "categoryType": "Entrada",
       "name": "Tostada Mediterránea",
       "store_id": "16438",
       "description": "Pan sourdough con hummus de garbanzo , variedad de pimentones, pepino europeo, tomate uvalina, aceituna morada, queso feta, rábano, orégano y cilantro.",
@@ -339,7 +339,7 @@
     {
       "id": 14,
       "category": "Sopas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sopa Azteca",
       "store_id": "16438",
       "description": "Sopa de tomates rostizados, chile ancho y guajillo, acompañado de pollo, aguacate, crema de leche, cilantro y totopos.",
@@ -365,7 +365,7 @@
     {
       "id": 15,
       "category": "Sopas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Crema Felicidad",
       "store_id": "16438",
       "description": "Crema de ahuyama, jengibre, limonaria, curry y almendras tostadas.",
@@ -391,7 +391,7 @@
     {
       "id": 16,
       "category": "Sopas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sopa de Lentejas",
       "store_id": "16438",
       "description": "Sopa de lentejas con cebolla encurtida, queso feta y cilantro.",
@@ -417,7 +417,7 @@
     {
       "id": 17,
       "category": "Sopas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Crema Verde",
       "store_id": "16438",
       "description": "Crema de espinaca, arveja y zucchini, decorada con crutones y crema de leche.",
@@ -443,7 +443,7 @@
     {
       "id": 18,
       "category": "Sopas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sopa Fundamental",
       "store_id": "16438",
       "description": "Sopa de pollo con pasta en tornillos, zanahoria, apio y cilantro.",
@@ -469,7 +469,7 @@
     {
       "id": 19,
       "category": "Ensaladas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Mykonos",
       "store_id": "16438",
       "description": "Variedad de lechugas y pimentones, aceituna kalamata, tomate uvalina, pepino europeo, queso feta y vinagreta de vino blanco.",
@@ -495,7 +495,7 @@
     {
       "id": 20,
       "category": "Ensaladas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Mezze Árabe",
       "store_id": "16438",
       "description": "Falafel, hummus de garbanzo, rúgula, cebollas encurtidas, tomate uvalina y pepino europeo, acompañado de pan pita.",
@@ -521,7 +521,7 @@
     {
       "id": 21,
       "category": "Ensaladas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Cesar",
       "store_id": "16438",
       "description": "Variedad de lechugas, queso parmesano, crutones y vinagreta cesar.",
@@ -547,7 +547,7 @@
     {
       "id": 22,
       "category": "Ensaladas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Quinoa & Veggies",
       "store_id": "16438",
       "description": "Variedad de lechugas, quinua blanca y roja, pepino europeo, tomate uvalina, brócoli, aguacate, arándanos deshidratados, queso feta, garbanzos crocantes y vinagreta de vino blanco.",
@@ -573,7 +573,7 @@
     {
       "id": 23,
       "category": "Ensaladas",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Verona",
       "store_id": "16438",
       "description": "Pasta de tornillos, salsa pesto, queso bocconcini, tomates secos, uvalina, alcachofa y reducción de balsámico.",
@@ -599,7 +599,7 @@
     {
       "id": 24,
       "category": "Bowls",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Lomo Pimienta",
       "store_id": "16438",
       "description": "Lomo de res con champiñones en salsa de pimienta, mostaza dijon y crema de leche.",
@@ -625,7 +625,7 @@
     {
       "id": 25,
       "category": "Bowls",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Pollo, Espinaca y Champiñones",
       "store_id": "16438",
       "description": "Pollo en salsa de vino blanco y crema de leche, champiñones y espinaca.",
@@ -651,7 +651,7 @@
     {
       "id": 26,
       "category": "Bowls",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Curry Vegano",
       "store_id": "16438",
       "description": "Tofu en salsa de curry amarillo con leche de coco, brócoli, champiñones, tomates uvalina, garbanzos crocantes y almendras tostadas.",
@@ -677,7 +677,7 @@
     {
       "id": 27,
       "category": "Bowls",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Albóndigas Italianas",
       "store_id": "16438",
       "description": "Albóndigas de res y cerdo con salsa napolitana, queso parmesano y albahaca.",
@@ -703,7 +703,7 @@
     {
       "id": 28,
       "category": "Bowls",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Pollo Thai",
       "store_id": "16438",
       "description": "Pollo en salsa de curry amarillo y leche de coco, champiñones, cebolla morada, tomates uvalina y garbanzos crocantes.",
@@ -729,7 +729,7 @@
     {
       "id": 29,
       "category": "Bowls",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Encocado Lenu",
       "store_id": "16438",
       "description": "Camarón y calamar en salsa a base de achiote, leche de coco y hierbas del pacífico.",
@@ -755,7 +755,7 @@
     {
       "id": 30,
       "category": "Bowls",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Pollo Masala",
       "store_id": "16438",
       "description": "Pollo con especias indias, tomate, y crema de coco, yogurt griego y garbanzos crocantes.",
@@ -781,7 +781,7 @@
     {
       "id": 31,
       "category": "Bowls",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Pollo Sweet Chilli",
       "store_id": "16438",
       "description": "Pollo en salsa agridulce con variedad de pimentones y ajonjolí.",
@@ -807,7 +807,7 @@
     {
       "id": 32,
       "category": "Bacanitos",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Albóndigas & Pasta",
       "store_id": "16438",
       "description": "Albóndigas de res y cerdo en salsa napolitana, tornillos de pasta y láminas de queso parmesano.",
@@ -833,7 +833,7 @@
     {
       "id": 33,
       "category": "Bacanitos",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Bowl Mexicanito",
       "store_id": "16438",
       "description": "Pollo a la placha en cubos, arroz, tomates uvalina, guacamole y totopos.",
@@ -859,7 +859,7 @@
     {
       "id": 34,
       "category": "Sándwiches",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sándwich de Atún",
       "store_id": "16438",
       "description": "Pan sourdough, ensalada de atún con mayonesa de la casa, tomates, pepino europeo, rúgula y cebolla morada encurtida.",
@@ -885,7 +885,7 @@
     {
       "id": 35,
       "category": "Sándwiches",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sándwich de Pavo",
       "store_id": "16438",
       "description": "Pan ciabatta, pavo, jalea de frutos rojos, tomates, pepino europeo, tocineta y mayonesa.",
@@ -911,7 +911,7 @@
     {
       "id": 36,
       "category": "Sándwiches",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sándwich Serrano",
       "store_id": "16438",
       "description": "Pan ciabatta, jamón serrano, queso bocconcini, tomates, mayonesa y salsa pesto.",
@@ -937,7 +937,7 @@
     {
       "id": 37,
       "category": "Sándwiches",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sándwich de Trucha Ahumada",
       "store_id": "16438",
       "description": "Pan sourdough, trucha ahumada, guacamole, queso crema, tomates y rúgula.",
@@ -963,7 +963,7 @@
     {
       "id": 38,
       "category": "Sándwiches",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Sándwich de Huevo",
       "store_id": "16438",
       "description": "Pan ciabatta, ensaladilla de huevo, tocineta, rúgula, tomates, pepino europeo y mayonesa de la casa.",
@@ -989,7 +989,7 @@
     {
       "id": 39,
       "category": "Acompañamientos",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Puré De Papa",
       "store_id": "16438",
       "description": "Porción de puré de papa. puede contener lácteos.",
@@ -1015,7 +1015,7 @@
     {
       "id": 40,
       "category": "Acompañamientos",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Ensalada",
       "store_id": "16438",
       "description": "Ensalada de mix de lechugas, garbanzo crocante, tomate uvalina, aguacate y vinagreta. puede contener trazas de nuez y especias.",
@@ -1041,7 +1041,7 @@
     {
       "id": 41,
       "category": "Acompañamientos",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Cous Cous con Árandanos Deshidratados",
       "store_id": "16438",
       "description": "Porción de cous cous. puede contener gluten y trazas de nuez.",
@@ -1067,7 +1067,7 @@
     {
       "id": 42,
       "category": "Acompañamientos",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Chips de Yuca y Plátano",
       "store_id": "16438",
       "description": "Chips de yuca y plátano verde crocantes.",
@@ -1093,7 +1093,7 @@
     {
       "id": 43,
       "category": "Acompañamientos",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Arroz Jazmín",
       "store_id": "16438",
       "description": "Porción de arroz blanco tipo jazmín.",
@@ -1119,7 +1119,7 @@
     {
       "id": 44,
       "category": "Acompañamientos",
-      "categoryType": "fuerte",
+      "categoryType": "Fuerte",
       "name": "Pan Mantequilla Miel",
       "store_id": "16438",
       "description": "Pan de masa madre acompañado de mantequilla y miel. puede contener lácteos y gluten.",
@@ -1145,7 +1145,7 @@
     {
       "id": 45,
       "category": "Panadería",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Canasta de Pan",
       "store_id": "16438",
       "description": "Canasta de Pan.",
@@ -1171,7 +1171,7 @@
     {
       "id": 46,
       "category": "Panadería",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Waffle de Pan de Yuca",
       "store_id": "16438",
       "description": "Waffle de Pan de Yuca.",
@@ -1197,7 +1197,7 @@
     {
       "id": 47,
       "category": "Panadería",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Quiche Cebolla Caramelizada y Tocineta",
       "store_id": "16438",
       "description": "Quiche Cebolla Caramelizada y Tocineta",
@@ -1223,7 +1223,7 @@
     {
       "id": 48,
       "category": "Panadería",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Muffin de Banano y Chunks de Chocolate",
       "store_id": "16438",
       "description": "Muffin de Banano y Chunks de Chocolate.",
@@ -1249,7 +1249,7 @@
     {
       "id": 49,
       "category": "Panadería",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Quiche Caprese",
       "store_id": "16438",
       "description": "Quiche con tomate seco y fresco",
@@ -1275,7 +1275,7 @@
     {
       "id": 50,
       "category": "Panadería",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Croissant Mantequilla",
       "store_id": "16438",
       "description": "Croissant Mantequilla",
@@ -1301,7 +1301,7 @@
     {
       "id": 51,
       "category": "Panadería",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Croissant de Almendras",
       "store_id": "16438",
       "description": "Croissant de Almendras",
@@ -1327,7 +1327,7 @@
     {
       "id": 52,
       "category": "Panadería",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Waffle de Choclo",
       "store_id": "16438",
       "description": "Waffle de Choclo.",
@@ -1353,7 +1353,7 @@
     {
       "id": 53,
       "category": "Pasteleria",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Torta de Mora y Glaseado de Limón",
       "store_id": "16438",
       "description": "Torta de moras con glaseado de limón.",
@@ -1379,7 +1379,7 @@
     {
       "id": 54,
       "category": "Pasteleria",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Torta de Chocolate y Dulce de Leche",
       "store_id": "16438",
       "description": "Torta de chocolate humeda con dulce de leche en el medio, cubierta de ganache de chocolate.",
@@ -1405,7 +1405,7 @@
     {
       "id": 55,
       "category": "Pasteleria",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Galleta Chocolate y Marshmallow",
       "store_id": "16438",
       "description": "Galleta de chocolate con marshmallow.",
@@ -1431,7 +1431,7 @@
     {
       "id": 56,
       "category": "Pasteleria",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Classic Brownie",
       "store_id": "16438",
       "description": "Classic Brownie",
@@ -1457,7 +1457,7 @@
     {
       "id": 57,
       "category": "Pasteleria",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Galleta de Avena, Nueces, Arándanos y Canela",
       "store_id": "16438",
       "description": "Galleta de Avena, Nueces, Arándanos y Canela.",
@@ -1483,7 +1483,7 @@
     {
       "id": 58,
       "category": "Pasteleria",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Galleta Chocolate Chips",
       "store_id": "16438",
       "description": "Galleta con chunks de chocolate semi amargo.",
@@ -1509,7 +1509,7 @@
     {
       "id": 59,
       "category": "Pasteleria",
-      "categoryType": "postre",
+      "categoryType": "Postre",
       "name": "Torta de Zanahoria",
       "store_id": "16438",
       "description": "Torta de zanahoria con caramelo y popcorn caramelizado",
@@ -1535,7 +1535,7 @@
     {
       "id": 60,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Soda Frutos Rojos",
       "store_id": "16438",
       "description": "Soda Frutos Rojos",
@@ -1561,7 +1561,7 @@
     {
       "id": 61,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Soda Pepino y Jengibre",
       "store_id": "16438",
       "description": "Soda Pepino y Jengibre.",
@@ -1587,7 +1587,7 @@
     {
       "id": 62,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Jugo De Naranja",
       "store_id": "16438",
       "description": "Jugo de naranja 12 onz.",
@@ -1613,7 +1613,7 @@
     {
       "id": 63,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Jugo Mandarina",
       "store_id": "16438",
       "description": "",
@@ -1639,7 +1639,7 @@
     {
       "id": 64,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Jugo de Fresa",
       "store_id": "16438",
       "description": "",
@@ -1665,7 +1665,7 @@
     {
       "id": 65,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Jugo de Mango",
       "store_id": "16438",
       "description": "",
@@ -1691,7 +1691,7 @@
     {
       "id": 66,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Smoothie Baru",
       "store_id": "16438",
       "description": "Batido de piña, agua de coco, crema de coco, albahaca y hierbabuena.",
@@ -1717,7 +1717,7 @@
     {
       "id": 67,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Limonada Natural",
       "store_id": "16438",
       "description": "Limonada Natural.",
@@ -1743,7 +1743,7 @@
     {
       "id": 68,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Limonada de Coco",
       "store_id": "16438",
       "description": "",
@@ -1769,7 +1769,7 @@
     {
       "id": 69,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Drip Iced Coffee",
       "store_id": "16438",
       "description": "",
@@ -1795,7 +1795,7 @@
     {
       "id": 70,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Iced Matcha",
       "store_id": "16438",
       "description": "",
@@ -1820,6 +1820,8 @@
     },
     {
       "id": 71,
+      "category": "Bebidas Frías",
+      "categoryType": "Bebida",
       "name": "Iced Milo",
       "store_id": "16438",
       "description": "",
@@ -1845,7 +1847,7 @@
     {
       "id": 72,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Iced Chai",
       "store_id": "16438",
       "description": "",
@@ -1871,7 +1873,7 @@
     {
       "id": 73,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Iced Latte",
       "store_id": "16438",
       "description": "",
@@ -1896,6 +1898,8 @@
     },
     {
       "id": 74,
+      "category": "Bebidas Frías",
+      "categoryType": "Bebida",
       "name": "Iced Mocachino",
       "store_id": "16438",
       "description": "",
@@ -1921,7 +1925,7 @@
     {
       "id": 75,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Agua Manantial Con Gas 600 Ml",
       "store_id": "16438",
       "description": "Agua Manantial Con Gas 600 Ml",
@@ -1947,7 +1951,7 @@
     {
       "id": 76,
       "category": "Bebidas Frías",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Coca Cola Sabor Original 330 Ml",
       "store_id": "16438",
       "description": "Coca Cola Sabor Original 330 Ml.",
@@ -1973,7 +1977,7 @@
     {
       "id": 77,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Milo",
       "store_id": "16438",
       "description": "Milo 9 onz",
@@ -1999,7 +2003,7 @@
     {
       "id": 78,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Chocolate ",
       "store_id": "16438",
       "description": "Chocolate 9 onz",
@@ -2025,7 +2029,7 @@
     {
       "id": 79,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Té Matcha ",
       "store_id": "16438",
       "description": "Té Matcha 9 onz",
@@ -2051,7 +2055,7 @@
     {
       "id": 80,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Mocachino ",
       "store_id": "16438",
       "description": "",
@@ -2077,7 +2081,7 @@
     {
       "id": 81,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Espresso",
       "store_id": "16438",
       "description": "",
@@ -2103,7 +2107,7 @@
     {
       "id": 82,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Americano",
       "store_id": "16438",
       "description": "",
@@ -2129,7 +2133,7 @@
     {
       "id": 83,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Infusión Primaveral",
       "store_id": "16438",
       "description": "Infusión Primaveral 9 onz",
@@ -2155,7 +2159,7 @@
     {
       "id": 84,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Infusión Tropical ",
       "store_id": "16438",
       "description": "Infusión Tropical 9 onz",
@@ -2180,6 +2184,8 @@
     },
     {
       "id": 85,
+      "category": "Bebidas Calientes",
+      "categoryType": "Bebida",
       "name": "Infusión Frutos Rojos",
       "store_id": "16438",
       "description": "Infusión Frutos Rojos 9 onz",
@@ -2204,6 +2210,8 @@
     },
     {
       "id": 86,
+      "category": "Bebidas Calientes",
+      "categoryType": "Bebida",
       "name": "Té Verde o Negro",
       "store_id": "16438",
       "description": "",
@@ -2229,7 +2237,7 @@
     {
       "id": 87,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Latte ",
       "store_id": "16438",
       "description": "",
@@ -2255,7 +2263,7 @@
     {
       "id": 88,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Capuccino",
       "store_id": "16438",
       "description": "",
@@ -2281,7 +2289,7 @@
     {
       "id": 89,
       "category": "Bebidas Calientes",
-      "categoryType": "bebida",
+      "categoryType": "Bebida",
       "name": "Té Chai ",
       "store_id": "16438",
       "description": "Té Chai 9 onz",
