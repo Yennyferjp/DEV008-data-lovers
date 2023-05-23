@@ -1,36 +1,86 @@
-import menuArreglo from './data.js'
+import { obtenerCategorias, obtenerSubcategorias, busqueda, menuArreglo, filtrado } from './data.js'
 
-let categorias = []
-
-menuArreglo.forEach((producto) =>{
-  if (!categorias.includes(producto.categoryType)) {
-    categorias.push(producto.categoryType)
-  }
-})
+const categorias = obtenerCategorias()
 
 // Cmbio tati - 16 -creo un arreglo con las categorias 
 categorias.forEach(c => {
   const section = document.getElementById("filtro")
-
-  const titulo =document.createElement("h3")
+  
+  const titulo = document.createElement("h3")
+  const espacio= document.createElement("div")
+  const subcategorias = obtenerSubcategorias(c);
   const select = document.createElement("select");
-  var br = document.createElement("br");
   select.setAttribute("name", "category")
   select.setAttribute("id", "ct")
+  espacio.setAttribute("id", "es")
 
-  const option = document.createElement("option");
-  option.setAttribute("value", "entradas")
+  titulo.innerHTML = c;
+  let option
+  espacio.appendChild(titulo);
+  espacio.appendChild(select);
+  section.appendChild(espacio);
+  
 
-  titulo.innerHTML = c ;
-
-  select.appendChild(option);
-  section.appendChild(titulo);
-  section.appendChild(br);
-  section.appendChild(select);
+  subcategorias.forEach(s => {
+    option = document.createElement("option");
+    option.setAttribute("value", s);
+    option.innerHTML = s;
+    select.appendChild(option);
+  })
 
 });
 
 
+// BARRA DE BUSQUEDA 
+
+const menuItemsContainer = document.getElementById('menu-items');
+
+function renderMenuItems(menuArreglo) {
+    menuItemsContainer.innerHTML = '';
+
+    menuArreglo.forEach(function(item) {
+        const itemContainer = document.createElement('div');
+        itemContainer.classList.add('menu-item');
+
+        const itemName = document.createElement('h2');
+        itemName.textContent = item.name;
+
+        const itemDescription = document.createElement('p');
+        itemDescription.textContent = item.description;
+
+        const itemPrice = document.createElement('p');
+        itemPrice.textContent = `Precio: $${item.price}`;
+
+        const itemImage = document.createElement('img');
+        itemImage.src = item.imageUrl;
+        itemImage.alt = item.name;
+
+        itemContainer.appendChild(itemName);
+        itemContainer.appendChild(itemDescription);
+        itemContainer.appendChild(itemPrice);
+        itemContainer.appendChild(itemImage);
+
+        menuItemsContainer.appendChild(itemContainer);
+    });
+}
+
+const searchBar = document.getElementById('search');
+
+searchBar.addEventListener('keyup', function(event) {
+    const searchText = event.target.value.toLowerCase();
+    const filteredItems = busqueda(searchText);
+
+    renderMenuItems(filteredItems);
+});
+
+const selects = document.querySelectorAll('#ct');
+
+ selects.forEach(select => select.addEventListener('click', event => { 
+   const res= filtrado(event.target.value)
+   renderMenuItems(res)
+     }));
+
+renderMenuItems(menuArreglo);
 
 
 
@@ -55,18 +105,16 @@ categorias.forEach(c => {
 
 
 
-
-
-//cambio de lugar data.js de yenny 
+//TESTIMONIOS 
 fetch('testimonios.json')
-  .then(function(response) {
+  .then(function (response) {
     return response.json();
   })
-  .then(function(data) {
+  .then(function (data) {
     const testimoniosContainer = document.getElementById('testimoniosContainer');
 
     // Iterar sobre cada testimonio en los datos JSON
-    data.carousel.forEach(function(testimonio, index) {
+    data.carousel.forEach(function (testimonio, index) {
       // Crear elementos HTML para mostrar los datos del testimonio
       const carouselItem = document.createElement('div');
       carouselItem.classList.add('carousel-item');

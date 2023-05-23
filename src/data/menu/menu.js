@@ -807,7 +807,7 @@ export default {
     {
       "id": 32,
       "category": "Bacanitos",
-      "categoryType": "Fuerte",
+      "categoryType": "Entrada",
       "name": "Albóndigas & Pasta",
       "store_id": "16438",
       "description": "Albóndigas de res y cerdo en salsa napolitana, tornillos de pasta y láminas de queso parmesano.",
@@ -833,7 +833,7 @@ export default {
     {
       "id": 33,
       "category": "Bacanitos",
-      "categoryType": "Fuerte",
+      "categoryType": "Entrada",
       "name": "Bowl Mexicanito",
       "store_id": "16438",
       "description": "Pollo a la placha en cubos, arroz, tomates uvalina, guacamole y totopos.",
