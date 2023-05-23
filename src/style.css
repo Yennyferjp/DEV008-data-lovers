@@ -100,18 +100,27 @@ nav ul li {
 }
 
 nav>ul>li:first-child>a {
-    background-image: url(./img/home.png); /*Yenn 16 May2023*/
-    background-size: 24px; /*Yenn 16 May2023*/
-    background-repeat: no-repeat; /*Yenn 16 May2023*/
-    background-position: center center; /*Yenn 16 May2023*/
-    padding: 20px 40px; /*Yenn 16 May2023*/
+    background-image: url(./img/home.png);
+    /*Yenn 16 May2023*/
+    background-size: 24px;
+    /*Yenn 16 May2023*/
+    background-repeat: no-repeat;
+    /*Yenn 16 May2023*/
+    background-position: center center;
+    /*Yenn 16 May2023*/
+    padding: 20px 40px;
+    /*Yenn 16 May2023*/
 }
 
 nav>ul>li:first-child:hover>a {
-    background-image: url(./img/home.png); /*Yenn 16 May2023*/
-    background-size: 24px; /*Yenn 16 May2023*/
-    background-repeat: no-repeat; /*Yenn 16 May2023*/
-    background-position: center center; /*Yenn 16 May2023*/
+    background-image: url(./img/home.png);
+    /*Yenn 16 May2023*/
+    background-size: 24px;
+    /*Yenn 16 May2023*/
+    background-repeat: no-repeat;
+    /*Yenn 16 May2023*/
+    background-position: center center;
+    /*Yenn 16 May2023*/
 }
 
 nav>ul>li>a {
@@ -399,6 +408,73 @@ main {
         /*Yenn 16 May2023*/
     }
 
+ /*Yenn Barra Busqueda 23 May2023*/
+
+ .menu-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    justify-content: center;
+}
+.menu-item img {
+    max-width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#menu-items {
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.menu-item {
+flex-basis: 33.33%; /* Ancho de cada columna */
+height: 33.33vh; /* Altura de cada fila */
+box-sizing: border-box; /* Incluir el padding y borde en el ancho y altura */
+padding: 10px; /* Espacio interno */
+
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+#menu-items {
+flex-direction: column; /* Cambia la dirección a columnas en lugar de filas */
+align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.menu-item {
+flex-direction: row; /* Cambia la dirección a fila */
+justify-content: space-between; /* Alinea los elementos a los extremos */
+text-align: left; /* Alinea el texto a la izquierda */
+width: auto; /* Ancho automático para ocupar el espacio disponible */
+}
+
+.menu-item img {
+margin-top: 0; /* Elimina el margen superior de la imagen */
+margin-left: 10px; /* Margen izquierdo de la imagen */
+}
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 1200px) {
+.menu-item {
+flex-basis: calc(33.33% - 20px); /* Establece el ancho de cada elemento en un tercio del contenedor con un espacio de 20px entre ellos */
+margin: 10px; /* Agrega un margen entre los elementos */
+}
+}
+#menu-items {
+display: flex;
+flex-wrap: wrap; /* Permite el ajuste de línea */
+height: auto; /* Altura automática para acomodar el contenido */
+margin-top: 3%;
+
+
+}
+/*FILTRADO  */
 }
 
 #filtrar {
@@ -416,34 +492,41 @@ section>p {
 }
 
 #ct {
+    display: flex;
     cursor: pointer;
     box-sizing: border-box;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 15px;
     gap: 181px;
-    width: 150px;
-    height: 53px;
+    width: 200px;
+    height: 50px;
     background: #FFAC4B;
     border: 1px solid #AAAAAA;
     border-radius: 8px;
-    margin: 0 1%;
+    margin: 10% 10%;
 }
 
 #filtro {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-   
+    justify-content:center;
+
+}
+
+#es {
+    flex-direction: column;
+    display: flex;
+    margin: 0 10px;
 }
 
 footer {
-   font-size: 20px;
+    font-size: 20px;
     padding: 18px;
     background-color: #FFF9EA;
 }
 
-#logo{
+#logo {
     display: flex;
 }
 
@@ -493,7 +576,7 @@ p {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
-    
+
 }
 
 .imgbanner-testimonio img {
@@ -510,7 +593,7 @@ p {
         display: block;
         flex-direction: column;
         justify-content: space-around;
-        
+
     }
 
     .imgbanner-testimonio img {
@@ -522,7 +605,7 @@ p {
 #testimonials {
     display: flex;
     width: 90%;
-    margin: 0 10% ;
+    margin: 0 10%;
 }
 
 #testimoniosContainer {
@@ -531,7 +614,6 @@ p {
     justify-content: center;
     padding: 0 7%;
     align-items: center;
-    
-    
-}
 
+
+}
