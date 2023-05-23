@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 * {
-    margin: 0;
+    margin: 0 0;
     /*Yenn 16 May2023*/
     padding: 0;
     /*Yenn 16 May2023*/
@@ -42,6 +42,7 @@ header {
     /*Yenn 16 May2023*/
     padding: 10px;
     /*Yenn 16 May2023*/
+    position: relative;
 }
 
 .logo img {
@@ -252,11 +253,6 @@ nav ul li ul li a:hover {
 
 /*ARTICULO*/
 
-main {
-
-    margin-top: 5px;
-    /*Yenn 16 May2023*/
-}
 
 article {
     max-width: 1200px;
@@ -280,9 +276,18 @@ article p {
 
 
 main {
-    margin-top: 158px;
+    padding: 0;
+    margin-top: 160px;
+    background: url(img/banner-principal.png) no-repeat;
+    background-size: cover;
     /*Yenn 16 May2023*/
 }
+
+@media (max-width: 768px) {
+    .main {
+      background-image: url("img/banner-principal.png");
+    }
+  }
 
 /*ELEMENTOS RESPONSIVOS*/
 
@@ -401,12 +406,7 @@ main {
 
 }
 
-#filtrar {
-    padding: 30px;
-    background-color: #FFF9EA;
-    display: block;
-    text-align: center;
-}
+
 
 section>p {
     text-align: center;
@@ -427,8 +427,10 @@ section>p {
     background: #FFAC4B;
     border: 1px solid #AAAAAA;
     border-radius: 8px;
-    margin: 0 1%;
+    margin: 1% 1%;
 }
+
+
 
 #filtro {
     display: flex;
@@ -443,10 +445,63 @@ footer {
     background-color: #FFF9EA;
 }
 
-#logo{
+.logo{
     display: flex;
+    
 }
 
+.mainlogo{
+    width: 100%;
+    margin: 0;
+}
+
+.parrafo1 {
+    text-align: center;
+    margin: 0% 30%;
+    line-height: 1.5;
+    font-size: 20px;
+    padding-top: 250px;
+
+}
+
+
+.block1 {
+    margin-left: 30%;
+    width: 80%;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block3 {
+    width: 60%;
+    height: 170px;
+    display: flex;    
+    
+}
+
+.h4font {
+    color: #C7853A;
+    font-size: 1.5rem;
+    
+}
+
+h1 {
+    color: #614C32;
+    font-size: 2.5rem;
+}
+
+.title-testimonios{
+    text-align: start;
+    margin: 7% 20% 20% ;
+}
+
+.g-block-1 {
+    
+    float: left;
+}
 
 /*TESTIMONIOS*/
 
@@ -465,9 +520,8 @@ footer {
 }
 
 .carousel-item {
-    margin-top: 20%;
+    width: 200%;
     padding: 1% 1%;
-    width: 80%;
 
 }
 
@@ -509,13 +563,24 @@ p {
     .carousel-item {
         display: block;
         flex-direction: column;
-        justify-content: space-around;
+        
         
     }
 
     .imgbanner-testimonio img {
         display: none;
     }
+
+    .gusano{
+        display: none;
+    }
+
+    .parrafo1{
+        line-height: 1.3;
+        font-size: 15px;
+        margin: 2% 10%;
+    }
+
 
 }
 
@@ -529,8 +594,10 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 7%;
     align-items: center;
+    padding: 2% 0% 2% 10%;
+    
+   
     
     
 }

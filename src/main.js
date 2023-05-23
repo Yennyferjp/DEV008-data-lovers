@@ -9,6 +9,8 @@ menuArreglo.forEach((producto) =>{
 })
 
 // Cmbio tati - 16 -creo un arreglo con las categorias 
+
+
 categorias.forEach(c => {
   const section = document.getElementById("filtro")
 
@@ -101,18 +103,5 @@ fetch('testimonios.json')
       testimoniosContainer.appendChild(carouselItem);
     });
 
-    // Agregar div con el ID "bannertestimonio"
-    const bannertestimonioDiv = document.createElement('div');
-    bannertestimonioDiv.id = 'bannertestimonio';
-
-    // Agregar imagen al div
-    const bannertestimonio = document.createElement('img');
-    bannertestimonio.src = './img/imgbanner.png';
-    bannertestimonio.width = '310px';
-
-    bannertestimonioDiv.appendChild(bannertestimonio);
-
-    const bannerContainer = document.querySelector('.bannerimg-testimonios');
-    bannerContainer.appendChild(bannertestimonioDiv);
-  });
+   
 ////////////////////////////////////////////////////////////////////////////////////////
