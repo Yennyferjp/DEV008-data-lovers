@@ -39,26 +39,28 @@ function renderMenuItems(menuArreglo) {
     menuItemsContainer.innerHTML = '';
 
     menuArreglo.forEach(function(item) {
-        const itemContainer = document.createElement('div');
+        const itemContainer = document.createElement('article');
         itemContainer.classList.add('menu-item');
 
-        const itemName = document.createElement('h2');
+        const itemName = document.createElement('h3');
         itemName.textContent = item.name;
 
-        const itemDescription = document.createElement('p');
-        itemDescription.textContent = item.description;
-
-        const itemPrice = document.createElement('p');
-        itemPrice.textContent = `Precio: $${item.price}`;
+        const itemImgDesc = document.createElement('div')
+        itemImgDesc.setAttribute("id", "img-desc")
 
         const itemImage = document.createElement('img');
         itemImage.src = item.imageUrl;
         itemImage.alt = item.name;
+        itemImage.setAttribute("id", "imgProducto")
+
+        const itemDescription = document.createElement('p');
+        itemDescription.setAttribute("id", "description")
+        itemDescription.textContent = `${item.description}    \nPrecio: $${item.price}`
 
         itemContainer.appendChild(itemName);
-        itemContainer.appendChild(itemDescription);
-        itemContainer.appendChild(itemPrice);
-        itemContainer.appendChild(itemImage);
+        itemContainer.appendChild(itemImgDesc);
+        itemImgDesc.appendChild(itemImage);
+        itemImgDesc.appendChild(itemDescription);
 
         menuItemsContainer.appendChild(itemContainer);
     });
@@ -160,7 +162,6 @@ fetch('testimonios.json')
 
     bannertestimonioDiv.appendChild(bannertestimonio);
 
-    const bannerContainer = document.querySelector('.bannerimg-testimonios');
-    bannerContainer.appendChild(bannertestimonioDiv);
+  
   });
 ////////////////////////////////////////////////////////////////////////////////////////

@@ -20,77 +20,74 @@
 </head>
 
 <body>
-  <header>
-    <div class="header__superior">
-      <div class="logo">
-        <img src="./img/delietaste1.png" alt="">
-      </div>
-      <div class="search">
-        <input id="search" type="search" placeholder="¿Qué deseas buscar?">
+    <header class="header">
+      <div class="header__superior">
+        <div class="logo">
+          <img src="./img/delietaste1.png" alt="">
+        </div>
+        <div class="search">
+          <input id="search" type="search" placeholder="¿Qué deseas buscar?">
+        </div><!-- Yenn 16may 2023 -->
       </div><!-- Yenn 16may 2023 -->
-    </div><!-- Yenn 16may 2023 -->
-    <div class="container__menu">
-      <div class="menu">
-        <input type="checkbox" id="check__menu">
-        <label for="check__menu" id="label__check">
-          <i class="fas fa-bars icon__menu"></i>
-        </label>
-        <nav>
-          <ul>
-            <li><a href="#" id="selected"></a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+      <div class="container__menu">
+        <div class="menu">
+          <input type="checkbox" id="check__menu">
+          <label for="check__menu" id="label__check">
+            <i class="fas fa-bars icon__menu"></i>
+          </label>
+          <nav>
+            <ul>
+              <li><a href="#" id="selected"></a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
 
-  </header>
-  <main>
-    <section id="filtrar">
-      <img src="img/Logo delieTast.png" width="310px"><br><br>
-      <p> Traemos en cada plato ingredientes cuidadosamente
-        seleccionados, tratados con amor e inspirados en la belleza natural de nuestros campos con toda su riqueza
-        mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p><br>
-      <div id="filtro">
+    </header>
+    <main class="filtro">
+      <section id="filtrar">
+        <img src="img/Logo delieTast.png" width="310px"><br><br>
+        <p> Traemos en cada plato ingredientes cuidadosamente
+          seleccionados, tratados con amor e inspirados en la belleza natural de nuestros campos con toda su riqueza
+          mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p><br>
+        <div id="filtro">
 
-      </div>
-      <!--aqui van las opciones desde el JS-->
-    </section>
-  </main>
-  <section>
- <!--aqui van los articulos  desde el JS-->
-    <div>
+        </div>
+        <!--aqui van las opciones desde el JS-->
+      </section>
+    </main>
+    <section class="menu-comida">
+      <!--aqui van los articulos  desde el JS-->
       <h2>
-       <center> Nuestro Menu </center>
-       <div id="menu-items"></div>
+        Nuestro Menu
       </h2>
-    </div>
-  </section>
- 
+      <div id="menu-items"></div>
+      </h2>
+    </section>
+    <section class="testimonials">
+      <div class="imgbanner-testimonio">
+        <img src="../img/imgbanner.png" alt="">
+      </div>
+      <div id="testimoniosContainer" class="carousel slide" data-ride="false">
+      </div>
+    </section>
+    <footer class="footer">
+      <center>
+        <div class="footer">
 
-  <section id="testimonials">
-    <div class="imgbanner-testimonio">
-      <img src="../img/imgbanner.png" alt="">
-    </div>
-    <div id="testimoniosContainer" class="carousel slide" data-ride="false">
-    </div>
-  </section>
-
-  <footer>
-    <center>
-      <div class="footer">
-    
-      <br>
-      <img src="img/Logo delieTast.png" id="logo" width="250px"><br>
-    </center><p>Copyright &copy; Data-Lovers , todos los derechos reservados.</p>
-    </div> 
-    </center>
+          <br>
+          <img src="img/Logo delieTast.png" id="logo" width="250px"><br>
+      </center>
+      <p>Copyright &copy; Data-Lovers , todos los derechos reservados.</p>
+  </div>
+  </center>
   </footer>
 
   <script src="main.js" type="module"></script>
-  
+
 </body>
 
 </html>
