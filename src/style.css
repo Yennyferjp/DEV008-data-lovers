@@ -301,17 +301,15 @@ section>p {
 }
 
 /*ESTILO DE LISTADO PRODUCTOS*/
-.menu-comida {
-    
-}
+.menu-comida {}
 
 .menu-comida>div {
     padding: 10px;
 }
 
 .menu-comida>h2 {
-   text-align: center;
-   font-size: 200%;
+    text-align: center;
+    font-size: 200%;
 }
 
 #menu-items {
@@ -367,10 +365,33 @@ section>p {
     padding: 1% 1%;
 }
 
-#testimonials {
+.container_testimonios {
+    background-color: #F4E1C8;
+    border: solid #9F7D53;
+}
+
+
+.fonth4 {
+    text-align: left;
+    margin-left: 3%;
+
+}
+
+p {
+    text-align: left;
+    margin: 0 3%;
+    font-size: 17px;
+}
+
+.testimonials {
     display: flex;
-    width: 90%;
-    margin: 0 10%;
+    flex-direction: row;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+}
+
+.imgbanner-testimonio>img {
+    width: 420px;
 }
 
 #testimoniosContainer {
@@ -382,8 +403,7 @@ section>p {
 }
 
 /*ESTILO FOOTER*/
-.footer {
-}
+.footer {}
 
 footer {
     font-size: 20px;
@@ -406,39 +426,39 @@ main {
 /*ELEMENTOS RESPONSIVOS*/
 @media (max-width: 768px) {
     .main {
-      background-image: url("img/banner-principal.png");
+        background-image: url("img/banner-principal.png");
     }
-  }
 
-.icon__menu {
-    font-size: 26px;
-    /*Yenn 16 May2023*/
-    color: white;
-    /*Yenn 16 May2023*/
-    cursor: pointer;
-    /*Yenn 16 May2023*/
-    width: 26px;
-    /*Yenn 16 May2023*/
-    height: 100%;
-    /*Yenn 16 May2023*/
-    display: none;
-    /*Yenn 16 May2023*/
-    align-items: center;
-    /*Yenn 16 May2023*/
-}
+    .icon__menu {
+        font-size: 26px;
+        /*Yenn 16 May2023*/
+        color: white;
+        /*Yenn 16 May2023*/
+        cursor: pointer;
+        /*Yenn 16 May2023*/
+        width: 26px;
+        /*Yenn 16 May2023*/
+        height: 100%;
+        /*Yenn 16 May2023*/
+        display: none;
+        /*Yenn 16 May2023*/
+        align-items: center;
+        /*Yenn 16 May2023*/
+    }
 
-#label__check {
-    width: 26px;
-    /*Yenn 16 May2023*/
-    height: 100%;
-    /*Yenn 16 May2023*/
-    display: none;
-    /*Yenn 16 May2023*/
-}
+    #label__check {
+        width: 26px;
+        /*Yenn 16 May2023*/
+        height: 100%;
+        /*Yenn 16 May2023*/
+        display: none;
+        /*Yenn 16 May2023*/
+    }
 
-#check__menu {
-    display: none;
-    /*Yenn 16 May2023*/
+    #check__menu {
+        display: none;
+        /*Yenn 16 May2023*/
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -533,9 +553,9 @@ main {
         /* margin: 0 10px; */
         border-radius: 5%;
         /* flex-flow: row wrap; */
-    } 
-  
- #menu-items {
+    }
+
+    #menu-items {
         justify-content: space-between;
         display: flex;
         flex-flow: row wrap;
@@ -556,58 +576,54 @@ main {
     }
 }
 
-    /* Estilos para pantallas más pequeñas */
-    @media (max-width: 768px) {
-        #menu-items {
-            flex-direction: column;
-            /* Cambia la dirección a columnas en lugar de filas */
-            align-items: flex-start;
-            /* Alinea los elementos a la izquierda */
-        }
-
-        .menu-item {
-            flex-direction: row;
-            /* Cambia la dirección a fila */
-            justify-content: space-between;
-            /* Alinea los elementos a los extremos */
-            text-align: left;
-            /* Alinea el texto a la izquierda */
-            width: auto;
-            /* Ancho automático para ocupar el espacio disponible */
-        }
-
-        .menu-item img {
-            margin-top: 0;
-            /* Elimina el margen superior de la imagen */
-            margin-left: 10px;
-            /* Margen izquierdo de la imagen */
-        }
-    }
-
-    /* Estilos para pantallas más grandes */
-    @media (min-width: 1200px) {
-        .menu-item {
-            flex-basis: calc(33.33% - 20px);
-            /* Establece el ancho de cada elemento en un tercio del contenedor con un espacio de 20px entre ellos */
-            margin: 10px;
-            /* Agrega un margen entre los elementos */
-        }
-    }
-
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
     #menu-items {
-        display: flex;
-        flex-wrap: wrap;
-        /* Permite el ajuste de línea */
-        height: auto;
-        /* Altura automática para acomodar el contenido */
-        margin-top: 3%;
-
-
+        flex-direction: column;
+        /* Cambia la dirección a columnas en lugar de filas */
+        align-items: flex-start;
+        /* Alinea los elementos a la izquierda */
     }
 
-    /*FILTRADO  */
+    .menu-item {
+        flex-direction: row;
+        /* Cambia la dirección a fila */
+        justify-content: space-between;
+        /* Alinea los elementos a los extremos */
+        text-align: left;
+        /* Alinea el texto a la izquierda */
+        width: auto;
+        /* Ancho automático para ocupar el espacio disponible */
+    }
+
+    .menu-item img {
+        margin-top: 0;
+        /* Elimina el margen superior de la imagen */
+        margin-left: 10px;
+        /* Margen izquierdo de la imagen */
+    }
 }
 
+/* Estilos para pantallas más grandes */
+@media (min-width: 1200px) {
+    .menu-item {
+        flex-basis: calc(33.33% - 20px);
+        /* Establece el ancho de cada elemento en un tercio del contenedor con un espacio de 20px entre ellos */
+        margin: 10px;
+        /* Agrega un margen entre los elementos */
+    }
+}
+
+#menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite el ajuste de línea */
+    height: auto;
+    /* Altura automática para acomodar el contenido */
+    margin-top: 3%;
+}
+
+/*FILTRADO  */
 @media screen and (max-width: 806px) {
     .testimonials {
         flex: 100%;
@@ -624,22 +640,18 @@ main {
         display: none;
     }
 
-    .gusano{
+    .gusano {
         display: none;
     }
 
-    .parrafo1{
+    .parrafo1 {
         line-height: 1.3;
         font-size: 15px;
         margin: 2% 10%;
     }
-
-
 }
 
-
-
-.mainlogo{
+.mainlogo {
     width: 100%;
     margin: 0;
 }
@@ -666,14 +678,14 @@ main {
 .block3 {
     width: 60%;
     height: 170px;
-    display: flex;    
-    
+    display: flex;
+
 }
 
 .h4font {
     color: #C7853A;
     font-size: 1.5rem;
-    
+
 }
 
 h1 {
@@ -681,12 +693,12 @@ h1 {
     font-size: 2.5rem;
 }
 
-.title-testimonios{
+.title-testimonios {
     text-align: start;
-    margin: 7% 20% 20% ;
+    margin: 7% 20% 20%;
 }
 
 .g-block-1 {
-    
+
     float: left;
 }
