@@ -32,7 +32,6 @@ categorias.forEach(c => {
 
 });
 
-
 // BARRA DE BUSQUEDA 
 
 const menuItemsContainer = document.getElementById('menu-items');
@@ -41,26 +40,28 @@ function renderMenuItems(menuArreglo) {
     menuItemsContainer.innerHTML = '';
 
     menuArreglo.forEach(function(item) {
-        const itemContainer = document.createElement('div');
+        const itemContainer = document.createElement('article');
         itemContainer.classList.add('menu-item');
 
-        const itemName = document.createElement('h2');
+        const itemName = document.createElement('h3');
         itemName.textContent = item.name;
 
-        const itemDescription = document.createElement('p');
-        itemDescription.textContent = item.description;
-
-        const itemPrice = document.createElement('p');
-        itemPrice.textContent = `Precio: $${item.price}`;
+        const itemImgDesc = document.createElement('div')
+        itemImgDesc.setAttribute("id", "img-desc")
 
         const itemImage = document.createElement('img');
         itemImage.src = item.imageUrl;
         itemImage.alt = item.name;
+        itemImage.setAttribute("id", "imgProducto")
+
+        const itemDescription = document.createElement('p');
+        itemDescription.setAttribute("id", "description")
+        itemDescription.textContent = `${item.description}    \nPrecio: $${item.price}`
 
         itemContainer.appendChild(itemName);
-        itemContainer.appendChild(itemDescription);
-        itemContainer.appendChild(itemPrice);
-        itemContainer.appendChild(itemImage);
+        itemContainer.appendChild(itemImgDesc);
+        itemImgDesc.appendChild(itemImage);
+        itemImgDesc.appendChild(itemDescription);
 
         menuItemsContainer.appendChild(itemContainer);
     });
@@ -83,29 +84,6 @@ const selects = document.querySelectorAll('#ct');
      }));
 
 renderMenuItems(menuArreglo);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //TESTIMONIOS 
 fetch('testimonios.json')
@@ -151,5 +129,17 @@ fetch('testimonios.json')
       testimoniosContainer.appendChild(carouselItem);
     });
 
-   
+    // Agregar div con el ID "bannertestimonio"
+    const bannertestimonioDiv = document.createElement('div');
+    bannertestimonioDiv.id = 'bannertestimonio';
+
+    // Agregar imagen al div
+    const bannertestimonio = document.createElement('img');
+    bannertestimonio.src = './img/imgbanner.png';
+    bannertestimonio.width = '310px';
+
+    bannertestimonioDiv.appendChild(bannertestimonio);
+
+  
+  });
 ////////////////////////////////////////////////////////////////////////////////////////

@@ -1142,32 +1142,7 @@ export default {
         }
       ]
     },
-    {
-      "id": 45,
-      "category": "Panadería",
-      "categoryType": "Postre",
-      "name": "Canasta de Pan",
-      "store_id": "16438",
-      "description": "Canasta de Pan.",
-      "externalId": null,
-      "isAvailable": true,
-      "active": false,
-      "price": 19900,
-      "discountedPrice": 17910,
-      "minAllowed": 0,
-      "maxAllowed": 0,
-      "index": 0,
-      "imageUrl": "https://bacu.co/images/example.jpg",
-      "DetailImage": "https://bacu.co/images/example.jpg",
-      "shortcutImage": "https://bacu.co/images/example.jpg",
-      "tags": [
-        {
-          "label": "10%",
-          "bgColor": "#c5ffa1",
-          "fontColor": "#0f5945"
-        }
-      ]
-    },
+    
     {
       "id": 46,
       "category": "Panadería",
