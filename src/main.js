@@ -3,6 +3,8 @@ import { obtenerCategorias, obtenerSubcategorias, busqueda, menuArreglo, filtrad
 const categorias = obtenerCategorias()
 
 // Cmbio tati - 16 -creo un arreglo con las categorias 
+
+
 categorias.forEach(c => {
   const section = document.getElementById("filtro")
   
@@ -29,7 +31,6 @@ categorias.forEach(c => {
   })
 
 });
-
 
 // BARRA DE BUSQUEDA 
 
@@ -83,29 +84,6 @@ const selects = document.querySelectorAll('#ct');
      }));
 
 renderMenuItems(menuArreglo);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //TESTIMONIOS 
 fetch('testimonios.json')
