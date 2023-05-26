@@ -19,69 +19,106 @@
 </head>
 
 <body>
-    <header class="header">
-      <div class="header__superior">
-        <div class="logo">
-          <img src="./img/delietaste1.png" alt="">
-        </div>
-        <div class="search">
-          <input id="search" type="search" placeholder="¿Qué deseas buscar?">
-        </div><!-- Yenn 16may 2023 -->
-      </div><!-- Yenn 16may 2023 -->
-      <div class="container__menu">
-        <div class="menu">
-          <input type="checkbox" id="check__menu">
-          <label for="check__menu" id="label__check">
-            <i class="fas fa-bars icon__menu"></i>
-          </label>
-          <nav>
-            <ul>
-              <li><a href="#" id="selected"></a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+  <header class="header">
+    <div class="header__superior">
+      <div class="logo">
+        <img src="./img/delietaste1.png" alt="">
       </div>
-    </header>
-    <main class="filtro">
-      <section id="filtrar">
-        <img src="img/Logo delieTast.png" width="310px"><br><br>
+      <div class="search">
+        <input id="search" type="search" placeholder="¿Qué deseas buscar?">
+      </div><!-- Yenn 16may 2023 -->
+    </div><!-- Yenn 16may 2023 -->
+    <div class="container__menu">
+      <div class="menu">
+        <input type="checkbox" id="check__menu" title="checkbox">
+        <label for="check__menu" id="label__check">
+          <i class="fas fa-bars icon__menu"></i>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="#home" id="selected"></a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <a name="home"></a> 
+  <main class="filtro">
+    <section id="filtrar">
+      <div class="text-main">
         <p> Traemos en cada plato ingredientes cuidadosamente
           seleccionados, tratados con amor e inspirados en la belleza natural de nuestros campos con toda su riqueza
-          mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p><br>
-        <div id="filtro">
+          mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p>
+      </div>
+      <div id="filtro">
 
-        </div>
-        <!--aqui van las opciones desde el JS-->
+      </div>
+      <!--aqui van las opciones desde el JS-->
+    </section>
+  </main>
+  <a name="menu"></a> 
+  <section class="menu-comida">
+    <!--aqui van los articulos  desde el JS-->
+    <hr>
+    <div>
+      <br><br>
+      <h2 class="title-menu">
+        Nuestro Menú
+      </h2>
+      <h2 class="subtitle">
+        Our Popular Menú
+      </h2>
+      <br>
+      <p class="txt-secundario"> ¡Bienvenido a nuestro restaurante! Sumérgete en una experiencia culinaria única
+        mientras exploras nuestra exquisita selección de platos. Desde deliciosos entrantes hasta sabrosos platos
+        principales y tentadores postres, nuestro menú está cuidadosamente elaborado para satisfacer todos los
+        paladares. Descubre la fusión perfecta de sabores, la frescura de los ingredientes y la pasión que ponemos en
+        cada plato. </p>
+    </div>
+    <div id="menu-items"></div>
+    </h2>
+  </section>
+
+  <!--RESEÑAS-->
+  <a name="reseñas"></a> 
+  <section id="testimonials">
+    
+    <div class="imgbanner-testimonio">
+      <section id="">
+        <div>
+          <div class="g-block-1">
+            <div class="block1"> <img src="../img/imgbanner.png" alt="imgbanner" width="530px"> </div>
+            <div class="block2"></div>
+          </div>
+          <div class="g-block-2">
+            <div class="block3">
+              <div class="title-testimonios">
+                <h4 class="h4font"> Whats say about us? </h4> <br>
+                <h1>Que dicen nuestros clientes </h1>
+              </div>
+            </div>
+            <div id="testimoniosContainer" class="carousel slide" data-ride="false">
+            </div>
+          </div>
       </section>
-    </main>
-    <section class="menu-comida">
-      <!--aqui van los articulos  desde el JS-->
-      <h2>
-        Nuestro Menu
-      </h2>
-      <div id="menu-items"></div>
-      </h2>
-    </section>
-    <section class="testimonials">
-      <div class="imgbanner-testimonio">
-        <img src="../img/imgbanner.png" alt="">
-      </div>
-      <div id="testimoniosContainer" class="carousel slide" data-ride="false">
-      </div>
-    </section>
-    <footer class="footer">
-      <center>
-        <div class="footer">
+    </div>
+  </section>
 
-          <br>
-          <img src="img/Logo delieTast.png" id="logo" width="250px"><br>
-      </center>
-      <p>Copyright &copy; Data-Lovers , todos los derechos reservados.</p>
-  </div>
-  </center>
+ <!--FOOTER-->
+  <a name="contact"></a> 
+  <footer class="footer">
+    <center>
+      <div class="footer">
+
+        <br>
+        <img src="img/Logo delieTast.png" id="logo" width="250px"><br>
+    </center>
+    <p>Copyright &copy; Data-Lovers , todos los derechos reservados.</p>
+    </div>
+    </center>
   </footer>
 
   <script src="main.js" type="module"></script>

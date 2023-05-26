@@ -132,7 +132,7 @@ nav>ul>li>a {
     /*Yenn 16 May2023*/
     text-transform: uppercase;
     /*Yenn 16 May2023*/
-    font-size: 14px;
+    font-size: 20px;
     /*Yenn 16 May2023*/
     transition: all 300ms ease;
     /*Yenn 16 May2023*/
@@ -252,6 +252,11 @@ nav ul li ul li a:hover {
     /*Yenn 16 May2023*/
 }
 
+.text-main{
+    margin-top: 13%;
+    padding: 0 20% 2%;
+}
+
 /*ESTILOS FILTRADO EN MENU*/
 .filtro {
     margin-top: 158px;
@@ -262,6 +267,10 @@ nav ul li ul li a:hover {
     background-color: #FFF9EA;
     display: block;
     text-align: center;
+    margin-top: 160px;
+    background: url(img/banner-principal.png) no-repeat;
+    background-size: cover;
+    /*Yenn 16 May2023*/
 }
 
 section>p {
@@ -347,7 +356,11 @@ section>p {
 /*ESTILO TESTIMONIOS*/
 
 #testimonials {
-    color: #73695E;
+    background-color: ;
+    padding: 1% 0;
+    background-image: linear-gradient(135deg,#C76A00, #E1C64F, #DBB50B, #8A7930, #D0A573 );
+    background-size: 500%;
+    
 }
 
 .carousel {
@@ -378,9 +391,17 @@ section>p {
 }
 
 p {
-    text-align: left;
-    margin: 0 3%;
+    text-align: justify;
+    margin: 0 4%;
     font-size: 17px;
+    line-height: 1.2;
+}
+
+.txt-secundario {
+    padding: 0 3%;
+    font-size: 1.2rem;
+    justify-content: center;
+    
 }
 
 .testimonials {
@@ -392,7 +413,21 @@ p {
 
 .imgbanner-testimonio>img {
     width: 420px;
+    margin: 10% 0;
+    
 }
+
+.title-menu {
+    font-size: 2rem; 
+    text-align: center; 
+    color: #FFAC4B;
+  }
+  
+.subtitle {
+    font-size: 3rem; 
+    text-align: center; 
+    color: #614C32;
+  }
 
 #testimoniosContainer {
     display: flex;
@@ -403,7 +438,6 @@ p {
 }
 
 /*ESTILO FOOTER*/
-.footer {}
 
 footer {
     font-size: 20px;
@@ -415,13 +449,7 @@ footer {
     display: flex;
 }
 
-main {
-    padding: 0;
-    margin-top: 160px;
-    background: url(img/banner-principal.png) no-repeat;
-    background-size: cover;
-    /*Yenn 16 May2023*/
-}
+
 
 /*ELEMENTOS RESPONSIVOS*/
 @media (max-width: 768px) {
@@ -455,7 +483,7 @@ main {
         /*Yenn 16 May2023*/
     }
 
-    #check__menu {
+    #check__menu{
         display: none;
         /*Yenn 16 May2023*/
     }
@@ -640,15 +668,6 @@ main {
         display: none;
     }
 
-    .gusano {
-        display: none;
-    }
-
-    .parrafo1 {
-        line-height: 1.3;
-        font-size: 15px;
-        margin: 2% 10%;
-    }
 }
 
 .mainlogo {
@@ -656,14 +675,7 @@ main {
     margin: 0;
 }
 
-.parrafo1 {
-    text-align: center;
-    margin: 0% 30%;
-    line-height: 1.5;
-    font-size: 20px;
-    padding-top: 250px;
 
-}
 
 .block1 {
     margin-left: 30%;
@@ -683,7 +695,7 @@ main {
 }
 
 .h4font {
-    color: #C7853A;
+    color: white;
     font-size: 1.5rem;
 
 }
