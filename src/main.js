@@ -1,36 +1,69 @@
 import { obtenerCategorias, obtenerSubcategorias, busqueda, menuArreglo, filtrado } from './data.js'
 
-const categorias = obtenerCategorias()
+// Cambio tati - 16 -creo un arreglo con las categorias 
+function creacionCajonCategorias() {
+  const categorias = obtenerCategorias()
 
-// Cmbio tati - 16 -creo un arreglo con las categorias 
-
-
-categorias.forEach(c => {
   const section = document.getElementById("filtro")
-  
-  const titulo = document.createElement("h3")
-  const espacio= document.createElement("div")
-  const subcategorias = obtenerSubcategorias(c);
+  const espacio = document.createElement("div")
   const select = document.createElement("select");
   select.setAttribute("name", "category")
   select.setAttribute("id", "ct")
   espacio.setAttribute("id", "es")
 
-  titulo.innerHTML = c;
-  let option
-  espacio.appendChild(titulo);
-  espacio.appendChild(select);
-  section.appendChild(espacio);
-  
+  categorias.forEach(c => {
+    let option
 
-  subcategorias.forEach(s => {
+    espacio.appendChild(select);
+    section.appendChild(espacio);
+    option = document.createElement("option");
+    option.setAttribute("value", c);
+    option.innerHTML = c;
+    select.appendChild(option);
+  });
+}
+
+function creacionCajonSubCategorias(categoria) {
+  const subcategoria = obtenerSubcategorias(categoria)
+
+  for (let i = select.options.length; i >= 0; i--) {
+    select.remove(i);
+  }
+
+  subcategoria.forEach(s => {
+    let option
+
+    espacio.appendChild(select);
+    section.appendChild(espacio);
     option = document.createElement("option");
     option.setAttribute("value", s);
     option.innerHTML = s;
     select.appendChild(option);
+
   })
 
-});
+  const selects = document.querySelectorAll('#sct');
+
+  selects.forEach(select => select.addEventListener('click', event => {
+    const res = filtrado(event.target.value)
+    renderMenuItems(res)
+  }));
+}
+
+creacionCajonCategorias()
+const section = document.getElementById("filtro")
+const espacio = document.createElement("div")
+const select = document.createElement("select");
+select.setAttribute("name", "subcategory")
+select.setAttribute("id", "sct")
+espacio.setAttribute("id", "es")
+
+const selectSub = document.querySelectorAll('#ct');
+
+selectSub.forEach(select => select.addEventListener('click', event => {
+  const categoria = event.target.value
+  creacionCajonSubCategorias(categoria)
+}));
 
 //CONTAINER DE PLATOS
 
@@ -39,7 +72,7 @@ const menuItemsContainer = document.getElementById('menu-items');
 function renderMenuItems(menuArreglo) {
   menuItemsContainer.innerHTML = '';
 
-  menuArreglo.forEach(function(item) {
+  menuArreglo.forEach(function (item) {
     const itemContainer = document.createElement('article');
     itemContainer.classList.add('menu-item');
 
@@ -71,34 +104,27 @@ function renderMenuItems(menuArreglo) {
 
 const searchBar = document.getElementById('search');
 
-searchBar.addEventListener('keyup', function(event) {
+searchBar.addEventListener('keyup', function (event) {
   const searchText = event.target.value.toLowerCase();
   const filteredItems = busqueda(searchText);
 
   renderMenuItems(filteredItems);
 });
 
-const selects = document.querySelectorAll('#ct');
-
-selects.forEach(select => select.addEventListener('click', event => { 
-  const res= filtrado(event.target.value)
-  renderMenuItems(res)
-
-}));
 
 renderMenuItems(menuArreglo);
 
 //TESTIMONIOS
  
 fetch('testimonios.json')
-  .then(function(response) {
+  .then(function (response) {
     return response.json();
   })
-  .then(function(data) {
+  .then(function (data) {
     const testimoniosContainer = document.getElementById('testimoniosContainer');
 
     // Iterar sobre cada testimonio en los datos JSON
-    data.carousel.forEach(function(testimonio, index) {
+    data.carousel.forEach(function (testimonio, index) {
       // Crear elementos HTML para mostrar los datos del testimonio
       const carouselItem = document.createElement('div');
       carouselItem.classList.add('carousel-item');
@@ -131,7 +157,7 @@ fetch('testimonios.json')
       carouselItem.appendChild(containerTestimonios);
 
       testimoniosContainer.appendChild(carouselItem);
-    
+
     });
   });
 ////////////////////////////////////////////////////////////////////////////////////////

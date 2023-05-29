@@ -46,3 +46,5 @@ export function filtrado(subcategoria){
 
   return productos
 }
+
+

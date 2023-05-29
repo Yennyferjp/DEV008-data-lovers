@@ -189,7 +189,8 @@ section>p {
     justify-content: center;
 }
 
-#ct {
+#ct,
+#sct {
     display: flex;
     cursor: pointer;
     box-sizing: border-box;
