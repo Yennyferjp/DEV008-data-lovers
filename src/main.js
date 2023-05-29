@@ -32,7 +32,7 @@ categorias.forEach(c => {
 
 });
 
-// BARRA DE BUSQUEDA 
+//CONTAINER DE PLATOS
 
 const menuItemsContainer = document.getElementById('menu-items');
 
@@ -67,25 +67,29 @@ function renderMenuItems(menuArreglo) {
   });
 }
 
+// BARRA DE BUSQUEDA 
+
 const searchBar = document.getElementById('search');
 
 searchBar.addEventListener('keyup', function(event) {
-    const searchText = event.target.value.toLowerCase();
-    const filteredItems = busqueda(searchText);
+  const searchText = event.target.value.toLowerCase();
+  const filteredItems = busqueda(searchText);
 
-    renderMenuItems(filteredItems);
+  renderMenuItems(filteredItems);
 });
 
 const selects = document.querySelectorAll('#ct');
 
- selects.forEach(select => select.addEventListener('click', event => { 
-   const res= filtrado(event.target.value)
-   renderMenuItems(res)
-     }));
+selects.forEach(select => select.addEventListener('click', event => { 
+  const res= filtrado(event.target.value)
+  renderMenuItems(res)
+
+}));
 
 renderMenuItems(menuArreglo);
 
-//TESTIMONIOS 
+//TESTIMONIOS
+ 
 fetch('testimonios.json')
   .then(function(response) {
     return response.json();
