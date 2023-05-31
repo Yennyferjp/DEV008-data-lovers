@@ -169,18 +169,20 @@ nav ul li ul li a:hover {
     padding: 0 20% 2%;
 }
 
+.info-main{
+    margin-top: 220px;
+}
+
 /*ESTILOS FILTRADO EN MENU*/
 
 
 
 #filtrar {
-    padding: 40px;
-    background-color: #FFF9EA;
+   
     display: block;
     text-align: center;
-    margin-top: 160px;
-    background: url(img/banner-principal.png) no-repeat;
-    background-size: cover;
+
+  
 }
 
 section>p {
@@ -588,7 +590,6 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    margin-top: 3%;
     justify-content: center;
 }
 
