@@ -46,7 +46,7 @@ function creacionCajonSubCategorias(categoria) {
 
   selects.forEach(select => select.addEventListener('click', event => {
     const res = filtrado(event.target.value)
-    renderMenuItems(res)
+    limitRender(res, 12)
   }));
 }
 
@@ -109,19 +109,44 @@ function renderMenuItems(menuArreglo) {
 // BARRA DE BUSQUEDA 
 
 const searchBar = document.getElementById('search');
-
+let next = []
 searchBar.addEventListener('keyup', function (event) {
+  let limit = 0;
   const searchText = event.target.value.toLowerCase();
   const filteredItems = busqueda(searchText);
 
-  renderMenuItems(filteredItems);
+  limitRender(filteredItems, 12)
 });
 
+const verMasBtn = document.getElementById('vermas')
+verMasBtn.addEventListener('click', function (e) {
+  const menuItem = document.getElementsByClassName("menu-item").length
+  if (menuItem < menuArreglo.length) {
+    limitRender(menuArreglo, menuItem + 12)
+  }
+});
 
-renderMenuItems(menuArreglo);
+const verMenos = document.getElementById('vermenos')
+const menuItem = document.getElementsByClassName("menu-item").length
+
+verMenos.addEventListener('click', function (e) {
+  const menuItem = document.getElementsByClassName("menu-item").length
+  if (menuItem > 12 ) {
+    limitRender(menuArreglo, menuItem - 12)
+  }
+});
+
+function limitRender(menu, limit) {
+  if (limit <= menuArreglo.length) {
+    const nextMenu = menu.slice(0, limit)
+    renderMenuItems(nextMenu)
+  }
+}
+
+limitRender(menuArreglo, 12)
 
 //TESTIMONIOS
- 
+
 fetch('testimonios.json')
   .then(function (response) {
     return response.json();
