@@ -1,5 +1,39 @@
 import { obtenerCategorias, obtenerSubcategorias, busqueda, menuArreglo, filtrado } from './data.js'
 
+//CONTAINER DE PLATOS
+const menuItemsContainer = document.getElementById('menu-items');
+
+function renderMenuItems(menuArreglo) {
+  menuItemsContainer.innerHTML = '';
+
+  menuArreglo.forEach(function (item) {
+    const itemContainer = document.createElement('article');
+    itemContainer.classList.add('menu-item');
+
+    const itemName = document.createElement('h3');
+    itemName.textContent = item.name;
+
+    const itemImgDesc = document.createElement('div')
+    itemImgDesc.setAttribute("id", "img-desc")
+
+    const itemImage = document.createElement('img');
+    itemImage.src = item.imageUrl;
+    itemImage.alt = item.name;
+    itemImage.setAttribute("id", "imgProducto")
+
+    const itemDescription = document.createElement('p');
+    itemDescription.setAttribute("id", "description")
+    itemDescription.innerHTML = `<br> ${item.description}   <br> <strong> \nPrecio: $${item.price} </strong>`
+
+    itemContainer.appendChild(itemName);
+    itemContainer.appendChild(itemImgDesc);
+    itemImgDesc.appendChild(itemImage);
+    itemImgDesc.appendChild(itemDescription);
+
+    menuItemsContainer.appendChild(itemContainer);
+  });
+}
+
 // CUANDO ABRO LA PAGINA LO PRIMERO QUE HACE ES EJECUTAR ESTA 
 //FUNCION QUE SOLO MUESTRA 12 PRODUCTOS
 limitRender(menuArreglo, 12)
@@ -75,40 +109,6 @@ function creacionCajonSubCategorias(categoria) {
   }));
 }
 
-//CONTAINER DE PLATOS
-const menuItemsContainer = document.getElementById('menu-items');
-
-function renderMenuItems(menuArreglo) {
-  menuItemsContainer.innerHTML = '';
-
-  menuArreglo.forEach(function (item) {
-    const itemContainer = document.createElement('article');
-    itemContainer.classList.add('menu-item');
-
-    const itemName = document.createElement('h3');
-    itemName.textContent = item.name;
-
-    const itemImgDesc = document.createElement('div')
-    itemImgDesc.setAttribute("id", "img-desc")
-
-    const itemImage = document.createElement('img');
-    itemImage.src = item.imageUrl;
-    itemImage.alt = item.name;
-    itemImage.setAttribute("id", "imgProducto")
-
-    const itemDescription = document.createElement('p');
-    itemDescription.setAttribute("id", "description")
-    itemDescription.innerHTML = `<br> ${item.description}   <br> <strong> \nPrecio: $${item.price} </strong>`
-
-    itemContainer.appendChild(itemName);
-    itemContainer.appendChild(itemImgDesc);
-    itemImgDesc.appendChild(itemImage);
-    itemImgDesc.appendChild(itemDescription);
-
-    menuItemsContainer.appendChild(itemContainer);
-  });
-}
-
 // BARRA DE BUSQUEDA 
 const searchBar = document.getElementById('search');
 let next = []
@@ -130,14 +130,6 @@ verMasBtn.addEventListener('click', function (e) {
   }
 });
 
-// BOTON VER MENOS
-const verMenos = document.getElementById('vermenos')
-verMenos.addEventListener('click', function (e) {
-  const menuItem = document.getElementsByClassName("menu-item").length
-  if (menuItem > 12) {
-    limitRender(menuArreglo, menuItem - 12)
-  }
-});
 
 // FUNCION CON LIMITE DE PRODUCTOS
 function limitRender(menu, limit) {
