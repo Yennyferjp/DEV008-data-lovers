@@ -1,5 +1,9 @@
 import { obtenerCategorias, obtenerSubcategorias, busqueda, menuArreglo, filtrado } from './data.js'
 
+// CUANDO ABRO LA PAGINA LO PRIMERO QUE HACE ES EJECUTAR ESTA 
+//FUNCION QUE SOLO MUESTRA 12 PRODUCTOS
+limitRender(menuArreglo, 12)
+
 // Cambio tati - 16 -creo un arreglo con las categorias 
 function creacionCajonCategorias() {
   const categorias = obtenerCategorias();
@@ -23,13 +27,33 @@ function creacionCajonCategorias() {
   });
 }
 
+creacionCajonCategorias()
+
+//CREACION CAJON SUBCATEGORIAS
+const section = document.getElementById("filtro")
+const espacio = document.createElement("div")
+const select = document.createElement("select");
+select.setAttribute("name", "subcategory")
+select.setAttribute("id", "sct")
+espacio.setAttribute("id", "es")
+
+const selectCat = document.querySelectorAll('#ct');
+
+selectCat.forEach(select => select.addEventListener('click', event => {
+  const categoria = event.target.value
+  creacionCajonSubCategorias(categoria)
+}));
+
+
 function creacionCajonSubCategorias(categoria) {
   const subcategoria = obtenerSubcategorias(categoria);
 
+  //BORRANDO OPCIONES PAR EVITAR QUE SE REPITAN
   for (let i = select.options.length; i >= 0; i--) {
     select.remove(i);
   }
 
+  //RELLENA CAJON SUBCATEGORIA
   subcategoria.forEach(s => {
     let option
 
@@ -42,34 +66,16 @@ function creacionCajonSubCategorias(categoria) {
 
   })
 
-  const selects = document.querySelectorAll('#sct');
+  const selectSubcat = document.querySelectorAll('#sct');
 
-  selects.forEach(select => select.addEventListener('click', event => {
+  selectSubcat.forEach(select => select.addEventListener('click', event => {
+    //LLAMA A FILTRADO PARA RETORNAR EL MENU DE ACUERDO A LA SUBCATEGORIA
     const res = filtrado(event.target.value)
     limitRender(res, 12)
   }));
 }
 
-creacionCajonCategorias()
-const section = document.getElementById("filtro")
-const espacio = document.createElement("div")
-const select = document.createElement("select");
-select.setAttribute("name", "subcategory")
-select.setAttribute("id", "sct")
-espacio.setAttribute("id", "es")
-
-const selectSub = document.querySelectorAll('#ct');
-
-selectSub.forEach(select => select.addEventListener('click', event => {
-  const categoria = event.target.value
-  creacionCajonSubCategorias(categoria)
-
-  
-
-}));
-
 //CONTAINER DE PLATOS
-
 const menuItemsContainer = document.getElementById('menu-items');
 
 function renderMenuItems(menuArreglo) {
@@ -92,7 +98,7 @@ function renderMenuItems(menuArreglo) {
 
     const itemDescription = document.createElement('p');
     itemDescription.setAttribute("id", "description")
-    itemDescription.innerHTML =  `<br> ${item.description}   <br> <strong> \nPrecio: $${item.price} </strong>`
+    itemDescription.innerHTML = `<br> ${item.description}   <br> <strong> \nPrecio: $${item.price} </strong>`
 
     itemContainer.appendChild(itemName);
     itemContainer.appendChild(itemImgDesc);
@@ -103,11 +109,7 @@ function renderMenuItems(menuArreglo) {
   });
 }
 
-
-
-
 // BARRA DE BUSQUEDA 
-
 const searchBar = document.getElementById('search');
 let next = []
 searchBar.addEventListener('keyup', function (event) {
@@ -118,32 +120,31 @@ searchBar.addEventListener('keyup', function (event) {
   limitRender(filteredItems, 12)
 });
 
+// BOTON VER MAS
 const verMasBtn = document.getElementById('vermas')
 verMasBtn.addEventListener('click', function (e) {
+  //BUSCA CUANTOS PRODUCTOS TENGO EN PANTALLA
   const menuItem = document.getElementsByClassName("menu-item").length
   if (menuItem < menuArreglo.length) {
     limitRender(menuArreglo, menuItem + 12)
   }
 });
 
+// BOTON VER MENOS
 const verMenos = document.getElementById('vermenos')
-const menuItem = document.getElementsByClassName("menu-item").length
-
 verMenos.addEventListener('click', function (e) {
   const menuItem = document.getElementsByClassName("menu-item").length
-  if (menuItem > 12 ) {
+  if (menuItem > 12) {
     limitRender(menuArreglo, menuItem - 12)
   }
 });
 
+// FUNCION CON LIMITE DE PRODUCTOS
 function limitRender(menu, limit) {
-  if (limit <= menuArreglo.length) {
-    const nextMenu = menu.slice(0, limit)
-    renderMenuItems(nextMenu)
-  }
+  //SLICE CORTA EL ARREGLO PARA QUE TRAIGA PRODUCTOS DESDE EL CERO HASTA UN LIMITE 12
+  const nextMenu = menu.slice(0, limit)
+  renderMenuItems(nextMenu)
 }
-
-limitRender(menuArreglo, 12)
 
 //TESTIMONIOS
 
