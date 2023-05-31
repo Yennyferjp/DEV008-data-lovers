@@ -245,11 +245,15 @@ section>p {
 #vermenos {
     cursor: pointer;
     box-sizing: border-box;
+    align-items: center;
+    padding: 25px 40px;;
     width: 200px;
-    height: 50px;
-    background: #FFAC4B;
+    background: #c79153;
     border: 1px solid #5e4732;
     border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #filtro {
