@@ -2,17 +2,17 @@ import { obtenerCategorias, obtenerSubcategorias, busqueda, menuArreglo, filtrad
 
 // Cambio tati - 16 -creo un arreglo con las categorias 
 function creacionCajonCategorias() {
-  const categorias = obtenerCategorias()
+  const categorias = obtenerCategorias();
 
-  const section = document.getElementById("filtro")
-  const espacio = document.createElement("div")
+  const section = document.getElementById("filtro");
+  const espacio = document.createElement("div");
   const select = document.createElement("select");
-  select.setAttribute("name", "category")
-  select.setAttribute("id", "ct")
-  espacio.setAttribute("id", "es")
+  select.setAttribute("name", "category");
+  select.setAttribute("id", "ct");
+  espacio.setAttribute("id", "es");
 
   categorias.forEach(c => {
-    let option
+    let option;
 
     espacio.appendChild(select);
     section.appendChild(espacio);
@@ -24,7 +24,7 @@ function creacionCajonCategorias() {
 }
 
 function creacionCajonSubCategorias(categoria) {
-  const subcategoria = obtenerSubcategorias(categoria)
+  const subcategoria = obtenerSubcategorias(categoria);
 
   for (let i = select.options.length; i >= 0; i--) {
     select.remove(i);
@@ -63,6 +63,9 @@ const selectSub = document.querySelectorAll('#ct');
 selectSub.forEach(select => select.addEventListener('click', event => {
   const categoria = event.target.value
   creacionCajonSubCategorias(categoria)
+
+  
+
 }));
 
 //CONTAINER DE PLATOS
@@ -89,7 +92,7 @@ function renderMenuItems(menuArreglo) {
 
     const itemDescription = document.createElement('p');
     itemDescription.setAttribute("id", "description")
-    itemDescription.textContent = `${item.description}    \nPrecio: $${item.price}`
+    itemDescription.innerHTML =  `<br> ${item.description}   <br> <strong> \nPrecio: $${item.price} </strong>`
 
     itemContainer.appendChild(itemName);
     itemContainer.appendChild(itemImgDesc);
@@ -99,6 +102,9 @@ function renderMenuItems(menuArreglo) {
     menuItemsContainer.appendChild(itemContainer);
   });
 }
+
+
+
 
 // BARRA DE BUSQUEDA 
 

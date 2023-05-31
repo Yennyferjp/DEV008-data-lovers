@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delie Taste</title>
   <link rel="shortcut icon" href="img/Diseño.png">
@@ -22,7 +21,7 @@
   <header class="header">
     <div class="header__superior">
       <div class="logo">
-        <img src="./img/delietaste1.png" alt="">
+        <img src="./img/delietaste1.png" alt="logo del restaurante">
       </div>
       <div class="search">
         <input id="search" type="search" placeholder="¿Qué deseas buscar?">
@@ -36,7 +35,7 @@
         </label>
         <nav>
           <ul>
-            <li><a href="#home" id="selected"></a></li>
+            <li><a href="#" id="selected"></a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#reseñas">Reseñas</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -45,7 +44,7 @@
       </div>
     </div>
   </header>
-  <a name="home"></a> 
+  <a name="#menu"></a> 
   <main class="filtro">
     <section id="filtrar">
       <div class="text-main">
@@ -54,9 +53,9 @@
           mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p>
       </div>
       <div id="filtro">
-
+ <!--aqui van las opciones desde el JS-->
       </div>
-      <!--aqui van las opciones desde el JS-->
+     
     </section>
   </main>
   <a name="menu"></a> 
@@ -111,17 +110,59 @@
 
  <!--FOOTER-->
   <a name="contact"></a> 
-  <footer class="footer">
-    <center>
-      <div class="footer">
+ 
+      <footer class="footer-distributed">
+  
+          <div class="footer-left">
+              <div class="imgfooter">
+                <img src="img/delietaste1.png" alt="logo del restaurante">
+              </div>
+  
+              <p class="footer-links">
+                  <a href="#">Home</a>
+                  |
+                  <a href="#menu">Nuestros platos</a>
+                  |
+                  <a href="#reseñas">Experiencias</a>
+                
+              </p>
+  
+              <p class="footer-company-name">Copyright © 2023 <br>
+                 <strong>Desarrllado por: </strong> Tatiana Hernandez & Yennyfer Jarava</p>
+          </div>
+  
+          <div class="footer-center">
+              <div>
+                  <i class="fa fa-map-marker"></i>
+                  <p><span>RESTAURANT</span>
+                      Delie Taste</p>
+              </div>
+  
+              <div>
+                  <i class="fa fa-phone"></i>
+                  <p>+57 74**9**258</p>
+              </div>
+              <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="mailto:info@delietaste.com">info@delietaste.com</a></p>
+              </div>
+          </div>
+          <div class="footer-right">
+              <p class="footer-company-about">
+                  <span>About the company</span>
+                  <strong>DelieTaste</strong> es un restaurante que te daran sabores exquisitos para deleitar tu paladar. Nuestro talentoso equipo de chefs expertos combina técnicas culinarias innovadoras con recetas tradicionales para crear experiencias culinarias únicas. Cada plato es una obra maestra artesanal, cuidadosamente presentada para deleitar tanto a tus ojos como a tu paladar.
+              </p>
+              <div class="footer-icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+          </div>
+      </footer>
 
-        <br>
-        <img src="img/Logo delieTast.png" id="logo" width="250px"><br>
-    </center>
-    <p>Copyright &copy; Data-Lovers , todos los derechos reservados.</p>
-    </div>
-    </center>
-  </footer>
+
 
   <script src="main.js" type="module"></script>
 
