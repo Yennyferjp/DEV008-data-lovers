@@ -226,6 +226,8 @@ section>p {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+
+
 #sct {
     display: flex;
     cursor: pointer;
@@ -261,7 +263,6 @@ section>p {
     border-radius: 8px;
     margin: 20px 20px;
 }
-
 
 #vermas:hover{
     transform: scale(1.1);
@@ -588,6 +589,7 @@ h3 {
     flex-wrap: wrap;
     height: auto;
     margin-top: 3%;
+    justify-content: center;
 }
 
 /*FILTRADO  */
