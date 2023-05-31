@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delie Taste</title>
+  <link rel="shortcut icon" href="img/bigote-de-chef.png">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- FONT GOOGLE  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/5aceb7e347.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__superior">
+      <div class="logo">
+        <img src="./img/delietaste1.png" alt="logo del restaurante">
+      </div>
+      <div class="search">
+        <input id="search" type="search" placeholder="¿Qué deseas buscar?">
+      </div>
+    </div>
+    <div class="container__menu">
+      <div class="menu">
+        <input type="checkbox" id="check__menu" title="checkbox">
+        <label for="check__menu" id="label__check">
+          <i class="fas fa-bars icon__menu"></i>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="#" id="selected"></a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <a name="#menu"></a> 
+  <main class="filtro">
+    <section id="filtrar">
+      <div class="text-main">
+        <p> Traemos en cada plato ingredientes cuidadosamente
+          seleccionados, tratados con amor e inspirados en la belleza natural de nuestros campos con toda su riqueza
+          mineral y vitamínica hacia tu mesa para que vivas la placentera experiencia de ser saludable. </p>
+      </div>
+      <div id="filtro">
+ <!--aqui van las opciones desde el JS-->
+      </div>
+     
+    </section>
+  </main>
+  <a name="menu"></a> 
+  <section class="menu-comida">
+    <!--aqui van los articulos  desde el JS-->
+    <hr>
+    <div>
+      <br><br>
+      <h2 class="title-menu">
+        Nuestro Menú
+      </h2>
+      <h2 class="subtitle">
+        Our Popular Menú
+      </h2>
+      <br>
+      <p class="txt-secundario"> ¡Bienvenido a nuestro restaurante! Sumérgete en una experiencia culinaria única
+        mientras exploras nuestra exquisita selección de platos. Desde deliciosos entrantes hasta sabrosos platos
+        principales y tentadores postres, nuestro menú está cuidadosamente elaborado para satisfacer todos los
+        paladares. Descubre la fusión perfecta de sabores, la frescura de los ingredientes y la pasión que ponemos en
+        cada plato. </p>
+    </div>
+  
+  <!--SECCION  DE PLATOS -->
+    <div id="menu-items"></div>
+    <div class="vermas">
+      <button id="vermas">ver mas</button>
+      <button id="vermenos">ver menos</button>
+    </div>
+    </h2>
+  </section>
+
+  <!--RESEÑAS-->
+  <a name="reseñas"></a> 
+  <section id="testimonials">
+    
+    <div class="imgbanner-testimonio">
+      <section id="">
+        <div>
+          <div class="g-block-1">
+            <div class="block1"> <img src="../img/imgbanner.png" alt="imgbanner" width="530px"> </div>
+            <div class="block2"></div>
+          </div>
+          <div class="g-block-2">
+            <div class="block3">
+              <div class="title-testimonios">
+                <h4 class="h4font"> Whats say about us? </h4> <br>
+                <h1>Que dicen nuestros clientes </h1>
+              </div>
+            </div>
+            <div id="testimoniosContainer" class="carousel slide" data-ride="false">
+            </div>
+          </div>
+      </section>
+    </div>
+  </section>
+
+ <!--FOOTER-->
+  <a name="contact"></a> 
+ 
+      <footer class="footer-distributed">
+  
+          <div class="footer-left">
+              <div class="imgfooter">
+                <img src="img/delietaste1.png" alt="logo del restaurante">
+              </div>
+  
+              <p class="footer-links">
+                  <a href="#">Home</a>
+                  |
+                  <a href="#menu">Nuestros platos</a>
+                  |
+                  <a href="#reseñas">Experiencias</a>
+                
+              </p>
+  
+              <p class="footer-company-name">Copyright © 2023 <br>
+                 <strong>Desarrllado por: </strong> Tatiana Hernandez & Yennyfer Jarava</p>
+          </div>
+  
+          <div class="footer-center">
+              <div>
+                  <i class="fa fa-map-marker"></i>
+                  <p><span>RESTAURANT</span>
+                      Delie Taste</p>
+              </div>
+  
+              <div>
+                  <i class="fa fa-phone"></i>
+                  <p>+57 74**9**258</p>
+              </div>
+              <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="mailto:info@delietaste.com">info@delietaste.com</a></p>
+              </div>
+          </div>
+          <div class="footer-right">
+              <p class="footer-company-about">
+                  <span>About the company</span>
+                  <strong>DelieTaste</strong> es un restaurante que te daran sabores exquisitos para deleitar tu paladar. Nuestro talentoso equipo de chefs expertos combina técnicas culinarias innovadoras con recetas tradicionales para crear experiencias culinarias únicas. Cada plato es una obra maestra artesanal, cuidadosamente presentada para deleitar tanto a tus ojos como a tu paladar.
+              </p>
+              <div class="footer-icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+          </div>
+      </footer>
+
+
+
+  <script src="main.js" type="module"></script>
+
+</body>
+
+</html>
