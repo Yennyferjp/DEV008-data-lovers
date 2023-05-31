@@ -109,7 +109,6 @@ function renderMenuItems(menuArreglo) {
 // BARRA DE BUSQUEDA 
 
 const searchBar = document.getElementById('search');
-let next = []
 searchBar.addEventListener('keyup', function (event) {
   let limit = 0;
   const searchText = event.target.value.toLowerCase();
@@ -117,6 +116,8 @@ searchBar.addEventListener('keyup', function (event) {
 
   limitRender(filteredItems, 12)
 });
+
+//BOTONES DE VER MAS Y VER MENOS
 
 const verMasBtn = document.getElementById('vermas')
 verMasBtn.addEventListener('click', function (e) {
