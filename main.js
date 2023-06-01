@@ -89,11 +89,11 @@ function creacionCajonSubCategorias(categoria) {
 
   //RELLENA CAJON SUBCATEGORIA
   subcategoria.forEach(s => {
-    let option
+    
 
     espacio.appendChild(select);
     section.appendChild(espacio);
-    option = document.createElement("option");
+    const option = document.createElement("option");
     option.setAttribute("value", s);
     option.innerHTML = s;
     select.appendChild(option);
@@ -111,9 +111,7 @@ function creacionCajonSubCategorias(categoria) {
 
 // BARRA DE BUSQUEDA 
 const searchBar = document.getElementById('search');
-let next = []
 searchBar.addEventListener('keyup', function (event) {
-  let limit = 0;
   const searchText = event.target.value.toLowerCase();
   const filteredItems = busqueda(searchText);
 
@@ -122,7 +120,7 @@ searchBar.addEventListener('keyup', function (event) {
 
 // BOTON VER MAS
 const verMasBtn = document.getElementById('vermas')
-verMasBtn.addEventListener('click', function (e) {
+verMasBtn.addEventListener('click', function () {
   //BUSCA CUANTOS PRODUCTOS TENGO EN PANTALLA
   const menuItem = document.getElementsByClassName("menu-item").length
   if (menuItem < menuArreglo.length) {
