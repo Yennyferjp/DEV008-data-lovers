@@ -170,7 +170,7 @@ nav ul li ul li a:hover {
 }
 
 .info-main{
-    margin-top: 220px;
+    margin-top: 240px;
 }
 
 /*ESTILOS FILTRADO EN MENU*/
@@ -198,8 +198,7 @@ section>p {
    
 }
 
-#vermas,
-#vermenos {
+#vermas {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
@@ -272,11 +271,7 @@ section>p {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-#vermenos:hover{
-    transform: scale(1.1);
-    background: #C7853A;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
+
 
 #filtro {
     display: flex;
@@ -474,7 +469,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 595px) {
 
     .header__superior {
         padding: 10px;
@@ -560,10 +555,10 @@ h3 {
 }
 
 /* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     #menu-items {
         flex-direction: column;
-        align-items: flex-start;
+        align-items:center;
     }
 
     .menu-item {
@@ -579,7 +574,7 @@ h3 {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
     .menu-item {
         flex-basis: calc(33.33% - 20px);
         margin: 10px;
@@ -594,6 +589,13 @@ h3 {
 }
 
 /*FILTRADO  */
+@media (min-width: 600px) {
+    .testimonials {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 806px) {
     .testimonials {
         flex: 100%;
@@ -642,9 +644,9 @@ h3 {
 
 }
 
-h1 {
+h1{
     color: #614C32;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .title-testimonios {
