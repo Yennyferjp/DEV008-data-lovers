@@ -1,23 +1,18 @@
-import { example, anotherExample } from '../src/data.js';
+import { obtenerCategorias} from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('test funcion obtenerCategorias', () => {
+  it('verificamos que sea funcion', () => {
+    expect(typeof obtenerCategorias).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+  it('verifica que retorne arreglo con categorias', () => {
+    const llamadaFuncion = obtenerCategorias()
+    const categoriasEsperadas = ["Fuerte", "Entrada","Postre","Bebida"]
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+    expect(JSON.stringify(llamadaFuncion)).toBe(JSON.stringify(categoriasEsperadas));
   });
 });
+
+
+
