@@ -50,9 +50,11 @@ function creacionCajonCategorias() {
   espacio.setAttribute("id", "es");
 
   categorias.forEach(c => {
+    let option;
+
     espacio.appendChild(select);
     section.appendChild(espacio);
-    const option = document.createElement("option");
+    option = document.createElement("option");
     option.setAttribute("value", c);
     option.innerHTML = c;
     select.appendChild(option);
@@ -110,7 +112,6 @@ function creacionCajonSubCategorias(categoria) {
 // BARRA DE BUSQUEDA 
 const searchBar = document.getElementById('search');
 searchBar.addEventListener('keyup', function (event) {
-
   const searchText = event.target.value.toLowerCase();
   const filteredItems = busqueda(searchText);
 
