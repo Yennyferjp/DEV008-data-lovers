@@ -57,7 +57,6 @@
 nav {
     height: 100%;
 }
-
 nav>ul {
     height: 100%;
     display: flex;
@@ -77,6 +76,12 @@ nav>ul>li:first-child>a {
     padding: 20px 40px;
 }
 
+nav>ul>li:first-child:hover>a {
+    background-image: url(./img/home.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
 nav>ul>li>a {
     width: 100%;
@@ -168,9 +173,6 @@ nav ul li ul li a:hover {
 }
 
 /*ESTILOS FILTRADO EN MENU*/
-
-
-
 #filtrar {
    
     display: block;
@@ -192,8 +194,7 @@ section>p {
    
 }
 
-#vermas,
-#vermenos {
+#vermas {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
@@ -221,9 +222,6 @@ section>p {
     background: #C7853A;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-
-
 #sct {
     display: flex;
     cursor: pointer;
@@ -261,12 +259,6 @@ section>p {
 }
 
 #vermas:hover{
-    transform: scale(1.1);
-    background: #C7853A;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-#vermenos:hover{
     transform: scale(1.1);
     background: #C7853A;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -468,7 +460,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 580px) {
 
     .header__superior {
         padding: 10px;
@@ -477,8 +469,6 @@ h3 {
     .logo img {
         width: 250px;
     }
-
-  
 
     nav>ul {
         flex-direction: column;
@@ -509,7 +499,6 @@ h3 {
 
     nav>ul>li:first-child a {
         background-position: 20px;
-
     }
 
     #selected {
@@ -557,10 +546,10 @@ h3 {
 }
 
 /* Estilos para pantallas más pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     #menu-items {
         flex-direction: column;
-        align-items: flex-start;
+        align-items:center;
     }
 
     .menu-item {
@@ -576,7 +565,7 @@ h3 {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
     .menu-item {
         flex-basis: calc(33.33% - 20px);
         margin: 10px;
@@ -591,6 +580,13 @@ h3 {
 }
 
 /*FILTRADO  */
+@media (min-width: 600px) {
+    .testimonials {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 806px) {
     .testimonials {
         flex: 100%;
@@ -639,9 +635,9 @@ h3 {
 
 }
 
-h1 {
+h1{
     color: #614C32;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .title-testimonios {
@@ -664,7 +660,7 @@ footer {
         position: static;
     }
     header {
-        padding-top: 40px;
+        padding-top: 30px;
     }
 }
 
@@ -674,7 +670,7 @@ footer {
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
+    padding: 50px 50px 10px;
     
 }
 
