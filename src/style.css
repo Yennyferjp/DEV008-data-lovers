@@ -57,7 +57,6 @@
 nav {
     height: 100%;
 }
-
 nav>ul {
     height: 100%;
     display: flex;
@@ -174,9 +173,6 @@ nav ul li ul li a:hover {
 }
 
 /*ESTILOS FILTRADO EN MENU*/
-
-
-
 #filtrar {
    
     display: block;
@@ -226,9 +222,6 @@ section>p {
     background: #C7853A;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-
-
 #sct {
     display: flex;
     cursor: pointer;
@@ -270,8 +263,6 @@ section>p {
     background: #C7853A;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-
 
 #filtro {
     display: flex;
@@ -469,7 +460,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 580px) {
 
     .header__superior {
         padding: 10px;
@@ -669,7 +660,7 @@ footer {
         position: static;
     }
     header {
-        padding-top: 40px;
+        padding-top: 30px;
     }
 }
 
@@ -679,7 +670,7 @@ footer {
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
+    padding: 50px 50px 10px;
     
 }
 
