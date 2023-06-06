@@ -23,8 +23,8 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: space-around;
+    /* padding: 10px; */
     position: relative;
 }
 
@@ -45,7 +45,7 @@
     width: 100%;
     height: 60px;
     background: #997850;
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 
 .menu {
@@ -462,9 +462,6 @@ h3 {
 
 @media screen and (m-width: 380px) {
 
-    .header__superior {
-        padding: 10px;
-    }
 
     .logo img {
         width: 250px;
@@ -546,6 +543,17 @@ h3 {
 }
 
 /* Estilos para pantallas más pequeñas */
+
+@media (max-width: 590px) {
+    .header__superior {
+        display: flex;
+       flex-direction: column;
+    }
+
+    .logo img {
+        flex: auto;
+    }
+}
 @media (max-width: 1200px) {
     #menu-items {
         flex-direction: column;
