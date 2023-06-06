@@ -84,8 +84,6 @@ Como usuario, deseo realizar una navegación fluida en el menú inicial de la p�
 * Contactos: parte inferior 'footer' de la página web donde los usuarios podrán encontrar fácilmente la información necesaria para comunicarse con el restaurante. Esto incluye la posibilidad de realizar llamadas telefónicas, visitar la dirección física o enviar consultas a través del correo electrónico.
 
 
-
-
 ## PRUEBAS DE USABILIDAD 
  Se compartio durante el desarrollo de la Pagina Web  una  encuesta con las compañeras para identificar fallas y recibir Feedback adjuntamos el link, para que interactuaran con la interfaz del proyecto.
 ### Link resultados de encuesta dirigida al Usuario: 📊
@@ -95,9 +93,11 @@ El fin de realizar dicha encuesta fue para tener en cuenta la siguientes histori
 * Como usuario, quiero que la página web sea fácil de navegar y encontrar la información que necesito, para ahorrar tiempo y esfuerzo. 
 * Como usuario, quiero que el diseño y la apariencia visual de la página web sean atractivos y coherentes, para que sea agradable de utilizar.
 
+En resumen, se mencionan algunos comentarios y sugerencias sobre la página web. Se destaca que la barra superior de color café es grande y ocupa mucho espacio visual, sugiriendo hacerla más delgada o permitir que se oculte al navegar por la web. Se señala que en dispositivos móviles la barra se ve grande y ocupa mucho espacio, dificultando la navegación. También se menciona un pequeño desfase en la posición de la imagen al abrir nuevas páginas desde el menú. Se elogia la accesibilidad y facilidad de uso, así como los colores suaves y las imágenes descriptivas de los platos. Se sugiere solucionar el corte del texto "Nuestro Menú" y hacer ajustes en la distribución del logo y los botones. Se menciona la dificultad para encontrar bebidas y la confusión al aplicar nuevos filtros. Se sugiere mejorar la funcionalidad del botón "ver más menú" y se menciona la importancia de hacer ajustes para dispositivos móviles utilizando media queries y flexbox. En general, se reconoce el aspecto atractivo e intuitivo de la página y se menciona su potencial como base para un e-commerce.
+
 Se hizo análisis de las resṕuestas recibidas, tomando en cuenta diversas fallas que se presentaban en la interfaz tanto las fuentes y el despliegue de menú se veian mal, la cual verificamos con detalle en el codigo de CSS y lo corregimos, tambien ayudó a mejorar el historial de usuario con sus respectivos criterios de aceptacion al usuario final.
 
-# PRUENAS UNITARIAS 
+# PRUEBAS UNITARIAS 
 ## Listado de problemas detectados:
 ```
 obtenerCategorias › obtenerSubcategorias › returns an array of subcategories for a given category
