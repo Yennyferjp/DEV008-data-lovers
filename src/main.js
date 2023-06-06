@@ -1,4 +1,4 @@
-import { obtenerCategorias, obtenerSubcategorias, busqueda, menuArreglo, filtrado } from './data.js'
+import { obtenerCategorias, obtenerSubcategorias, busqueda, menuArreglo, filtrado} from './data.js'
 
 //CONTAINER DE PLATOS
 const menuItemsContainer = document.getElementById('menu-items');
@@ -50,11 +50,11 @@ function creacionCajonCategorias() {
   espacio.setAttribute("id", "es");
 
   categorias.forEach(c => {
-    let option;
+    
 
     espacio.appendChild(select);
     section.appendChild(espacio);
-    option = document.createElement("option");
+    const option = document.createElement("option");
     option.setAttribute("value", c);
     option.innerHTML = c;
     select.appendChild(option);
@@ -132,6 +132,7 @@ verMasBtn.addEventListener('click', function () {
 // FUNCION CON LIMITE DE PRODUCTOS
 function limitRender(menu, limit) {
   //SLICE CORTA EL ARREGLO PARA QUE TRAIGA PRODUCTOS DESDE EL CERO HASTA UN LIMITE 12
+  menu = ordenarMenu(menu);
   const nextMenu = menu.slice(0, limit)
   renderMenuItems(nextMenu)
 }
@@ -182,5 +183,14 @@ fetch('testimonios.json')
 
     });
   });
+  
+
+function ordenarMenu(menuNoOrdenado) {
+  const menuClonado = [...menuNoOrdenado]
+  return menuClonado.sort(function(a, b){
+    if(a.name < b.name) { return -1; }
+    if(a.name > b.name) { return 1; }
+    return 0;}); 
+}
 ////////////////////////////////////////////////////////////////////////////////////////
 

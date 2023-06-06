@@ -106,6 +106,7 @@ nav>ul>li>a:hover {
     transform: scale(1.1);
     background-color: #FBCB94;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
 }
 
 /*SUBMENU*/
@@ -435,7 +436,6 @@ h3 {
     padding: 2% 0% 2% 10%;
 }
 
-/*ESTILO FOOTER*/
 
 
 #check__menu{
@@ -486,15 +486,14 @@ h3 {
 
     nav>ul {
         flex-direction: column;
-        background-color: #D9A557;
+        background-color: #5e4732;
         position: fixed;
         left: 0;
         top: 158px;
-        width: 100%;
-        height: 0px;
+        width: 25%%;
         transition: all 300ms ease;
         z-index: 100;
-        opacity: 0;
+        opacity: 0.5;
         visibility: hidden;
     }
 
@@ -505,6 +504,7 @@ h3 {
 
     nav ul li ul {
         left: 90px;
+        
     }
 
     nav>ul>li:hover ul {
@@ -542,6 +542,8 @@ h3 {
         
     }
 
+
+
     #menu-items {
         justify-content: space-between;
         display: flex;
@@ -560,10 +562,35 @@ h3 {
 }
 
 /* Estilos para pantallas más pequeñas */
+@media (max-width: 550px) {
+    .header__superior {
+        display: flex;
+       flex-direction: column;
+    }
+    .logo img {
+        flex: auto;
+    }
+    .search input {
+        width: 220px;
+        height: 30px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .txt-secundario{
+        display: none;
+    }
+
+    .title-testimonios {
+        text-align: center;
+        
+    }
+}
+
+
 @media (max-width: 768px) {
     #menu-items {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .menu-item {
@@ -644,7 +671,7 @@ h3 {
 
 h1 {
     color: #614C32;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 .title-testimonios {
@@ -666,9 +693,7 @@ footer {
     footer {
         position: static;
     }
-    header {
-        padding-top: 40px;
-    }
+  
 }
 
 .footer-distributed {
