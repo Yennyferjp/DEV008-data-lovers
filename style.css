@@ -19,12 +19,11 @@
 
 /*HEADER SUPERIOR*/
 .header__superior {
-    max-width: 1250px;
+    max-width: 1050px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
     position: relative;
 }
 
