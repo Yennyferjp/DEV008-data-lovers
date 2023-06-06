@@ -544,7 +544,7 @@ h3 {
 
 /* Estilos para pantallas más pequeñas */
 
-@media (max-width: 590px) {
+@media (max-width: 550px) {
     .header__superior {
         display: flex;
        flex-direction: column;
@@ -553,8 +553,11 @@ h3 {
     .logo img {
         flex: auto;
     }
+    .txt-secundario{
+        display: none;
+    }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     #menu-items {
         flex-direction: column;
         align-items:center;
