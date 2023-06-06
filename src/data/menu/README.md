@@ -1,20 +1,18 @@
 # DESCRIPCION DEL PROYECTO 
 
 ## DATA-LOVERS = DELIE TASTE 
-Es una APLICACION WEB de un Restaurante de comida saludable donde el usuario va visualizar la pagina con todos sus menus e informacion ,con la finalidad de hacer busquedas especificas por plato o filtarla por categorias segun  dicho producto  .
- 
+Se trata de una aplicación web para un restaurante que ofrece comida saludable. La aplicación permite a los usuarios visualizar una página completa con todos los menús e información del restaurante. Su objetivo principal es facilitar búsquedas específicas de platos y filtrarlos por categorías según los productos ofrecidos. Estas categorías pueden incluir opciones como platos principales, ensaladas, postres, bebidas, entre otros. Al seleccionar una categoría específica, los usuarios podrán ver únicamente los platos relacionados con esa categoría, lo que facilita la búsqueda de acuerdo a las preferencias individuales.
+La aplicación web proporciona a los usuarios una interfaz intuitiva y fácil de usar, donde podrán explorar los diferentes menús disponibles. Además, podrán realizar búsquedas rápidas de platos específicos mediante el uso de palabras clave.
 
-
-
-##  Organizacion desarrollo de proyeco
-###  Link Herramiestas TRELLO 
+##  Organización desarrollo de proyecto
+###  Link Herramienta TRELLO 
 
  `<link>` : <https://trello.com/invite/b/2iLzAdVP/ATTI8321a03eda30be91e6595a0ed4390850EE6571AB/data-love>
 
 ## Herramientas:
-HTML para el FRONT con CSS , Javascript Vanilla con selectores para interactuar con el DOM
+HTML para el FRONT con CSS, Javascript Vanilla con selectores para interactuar con el DOM
 
-## Como iniciar el proyecto?
+## Cómo iniciar el proyecto?
 
 Instalar dependencias
 ```text
@@ -31,8 +29,13 @@ Ejecutar test
 npm run test
 ```
 
+Ejecutar deploy
+```text
+npm run deploy
+```
+
 ##  PROTOTIPOS
-Inicialmente se realizo prototipos en papel para darle forma a las ideas, además de pensar algunas ideas a futuro.
+Inicialmente se creó prototipos con herramientas como https://app.diagrams.net/ y sesiones de brainstorming que permitió dar forma a las ideas iniciales y pensar en posibles mejoras y características futuras para el proyecto. Esto ayudó a establecer una base sólida para el desarrollo y garantizar que el proyecto cumpliera con los requisitos y expectativas.
 ## Prototipo de Baja Fidelidad 
 
 ###  Screenshot de Drawio
@@ -49,63 +52,53 @@ Inicialmente se realizo prototipos en papel para darle forma a las ideas, ademá
 ![Image text](/src/img/delietaste1.png)
 
 
+# HISTORIA DE USUARIO INICIAL
 
-
-# HISTORIA DE USUARIO
-
-Como usuario, deseo obtener a través de una pagina web, la información de los productos generados a partir de una base de datos relacionada con el menú del restaurante DelyTaste, En dicha página debo puedo tener la posibilidad de hacer búsuedas y filtrados para así facilitar la forma en la que voy a obtener la información que necesito.
+## Barra de busqueda 🔍 
+Como usuario, deseo acceder a una página web que me brinde información sobre los productos ofrecidos por el restaurante DelieTaste. En la página web, se espera que se me brinde la posibilidad de realizar búsquedas para facilitar la obtención de la información que necesito de manera más eficiente y precisa.
  
- ## Menu de Navegacion ☰ 
-Como usuario quiero realizar una navegacion en el menu inicial de la página web para encontrar de forma  agil, el menu ,reseñas y contactos que despliega la pagina en general.
+ ## Criterios de aceptación:
+* La barra de búsqueda estará ubicada en una posición visible y de fácil acceso en la página web, lo que permitirá encontrarla fácilmente. Al escribir en la barra de búsqueda, se realizará una búsqueda dinámica y los resultados relevantes se mostrarán en tiempo real, sin necesidad de presionar un botón adicional.
+
+* La barra de búsqueda estará diseñada de manera clara y estéticamente agradable para facilitar su identificación y uso. Al proporcionar una experiencia de búsqueda fluida y sin interrupciones, la página web del restaurante DelieTaste permitirá una exploración rápida y eficiente de los productos disponibles.
+
+* Si el usuario realiza una búsqueda de un producto que no existe en el menú del restaurante, la sección de "NUESTRO MENÚ" no mostrará ningún resultado relacionado. Esto evitará confusiones y garantizará que los usuarios obtengan información precisa y relevante sobre los productos que están disponibles en el menú.
+
+## Filtros ⊽ 
+Como usuario quiero realizar una búsqueda de datos a través de filtro por categoría dentro de la pagina Web para agrupar los productos.
 
 ## Criterios de aceptación:
-El menú de navegacion  deberá ser una barra en la parte inicial con forma home 🏠 en dispositivos de escritorio 🖥️ y cuando es responsive en dispositivos moviles 📲 y tablets toma forma de menu de hambuergesa ☰ en la cual el usuario notara de forma intuitiva como interactuar por la pagina wed  .
-
-El menu de navegacion deberá contener un  botón en forma de 🏠  donde se generará la barra inicio con tres opciones de interaccion : menu - reseñas - contactos .
-* Menu: todos los item por productos.
-* Reseñas: el espacio donde los usuarios dan su testimonio de experiencia de usabilidad.
-* Contactos: parte inferior 'footer' de la pagina donde el usuario puede apreciar , numero telefonico,direccion,email y  links de aplicativos asociados.
-
-
-## Barra de busqueda 🔍
-Como usuario quiero realizar búsquedas de productos dentro de la página web para encontrar los productos que necesito de forma rápida.
+* El filtro de categorías será representado por una caja desplegable que mostrará el listado completo de categorías disponibles.
+* Al hacer clic en el icono de filtrar, se mostrarán todas las categorías para que el usuario pueda seleccionar la que desee.
+* Cuando el usuario elige una categoría, la página web mostrará únicamente los productos relacionados con dicha categoría, adaptando el menú según la selección realizada.
+* Si el usuario decide quitar el filtro de categoría, la página volverá a mostrar la página principal con el menú completo, sin ninguna categoría seleccionada.
+ 
+ ## Menú de Navegación ☰ 
+Como usuario, deseo realizar una navegación fluida en el menú inicial de la página web para encontrar rápidamente la sección de menú, reseñas y contacto que se encuentran disponibles en la página en general.
 
 ## Criterios de aceptación:
-La barra de búsqueda  deberá ser una caja de texto en la cual el usuario va ingresar su producto a buscar.
-
-La barra de búsqueda deberá contener un  botón en forma de lupa donde se generará la búsqueda de acuerdo a lo escrito en la barra .
-
-Al hacer clic en el botón buscar debe mostrarse en la parte inferior los productos relacionados con la  búsqueda.
-
-Cuando el  usuario   borra la búsqueda volverá a la página principal.
-
-cuando el usuario busca algo que no existe en el menú ,saldrá un mensaje “lo sentimos no encontramos tu búsqueda”.
-
-## FILTROS ⊽ 
-Como usuario quiero realizar una búsqueda de datos a través de filtro por categoría dentro de la pagina Web  para agrupar los productos.
-
-## Criterios de aceptación:
-El filtro  deberá ser una caja que despliegue el listado de categorías.
+* El menú de navegacion deberá ser una barra en la parte inicial con forma home 🏠 en dispositivos de escritorio 🖥️ y cuando es responsive en dispositivos moviles 📲 y tablets toma forma de menu de hambuergesa ☰ en la cual el usuario notará de forma intuitiva como interactuar por la página web.
+* El menú de navegacion deberá contener un botón en forma de 🏠  donde se generará la barra inicio con tres opciones de interaccion : menu - reseñas - contactos .
+* Menú: todos los item por productos.
+* Reseñas: el espacio donde los usuarios dan su testimonio de experiencia.
+* Contactos: parte inferior 'footer' de la página web donde los usuarios podrán encontrar fácilmente la información necesaria para comunicarse con el restaurante. Esto incluye la posibilidad de realizar llamadas telefónicas, visitar la dirección física o enviar consultas a través del correo electrónico.
 
 
-Al hacer clic en el icono de filtrar se mostraran todas la categorías a seleccionar .
 
-Cuando el usuario selecciona una categoría muestra los productos relacionados a esta .
-
-Cuando el usuario quita el filtro  de  categoría regresa a la página principal.
 
 ## PRUEBAS DE USABILIDAD 
- Se compartio durante el desarrollo de la Pagina Wed  una  encuesta con las compañeras para identificar fallas y recibir  Feedback adjuntamos el link , para que interactuaran con la interfaz del proyecto.
-### Link resultados de rncuesta dirigida al Usuario: 📊
+ Se compartio durante el desarrollo de la Pagina Web  una  encuesta con las compañeras para identificar fallas y recibir Feedback adjuntamos el link, para que interactuaran con la interfaz del proyecto.
+### Link resultados de encuesta dirigida al Usuario: 📊
  `<link>` : <https://docs.google.com/forms/d/1fpPqUphGXMEI2pLo0S0xlqa_Y6GgFBVGexuTdkR4o_0/edit#responses>
 
- Se hizo analisis de las resṕuestas recibidas , tomando en cuenta diversas fallas que se presentaban  en la interfaz tanto las fuentes y el despliegue de menú se veian mal , la cual verificamos con detalle en el codigo de CSS y lo corregimos ,tambien ayudo a mejorar el historial de usuario con sus respectivos crieteriosm de acetacion al usuario final .
+El fin de realizar dicha encuesta fue para tener en cuenta la siguientes historias de usuario y tener una retroalimentación valiosa que ayuda a mejorar la usabilidad y la experiencia del usuario:
+* Como usuario, quiero que la página web sea fácil de navegar y encontrar la información que necesito, para ahorrar tiempo y esfuerzo. 
+* Como usuario, quiero que el diseño y la apariencia visual de la página web sean atractivos y coherentes, para que sea agradable de utilizar.
 
+Se hizo análisis de las resṕuestas recibidas, tomando en cuenta diversas fallas que se presentaban en la interfaz tanto las fuentes y el despliegue de menú se veian mal, la cual verificamos con detalle en el codigo de CSS y lo corregimos, tambien ayudó a mejorar el historial de usuario con sus respectivos criterios de aceptacion al usuario final.
 
-
-
-# Tests de usabilidad 
-## Listado de problemas  detectados:
+# PRUENAS UNITARIAS 
+## Listado de problemas detectados:
 ```
 obtenerCategorias › obtenerSubcategorias › returns an array of subcategories for a given category
 
@@ -127,7 +120,7 @@ obtenerCategorias › obtenerSubcategorias › returns an array of subcategories
      expect(new Set(categories).size).toBe(categories.length); 
 ```
 
- * Nos ayudo a verificar que no salgan las  categorías duplicadas.
+ * Nos ayudÓ a verificar que no salgan las categorías duplicadas.
 
 ```
 expect(received).toBe(expected) // Object.is equality
@@ -138,7 +131,7 @@ expect(received).toBe(expected) // Object.is equality
     Received: serializes to the same string
 
 ```
-* error que espera la comparacion en el 'expect' sea entre 'strings' pero a cambio estaba enviando dos arrays.
+* error que espera la comparaciÓn en el 'expect' sea entre 'strings' pero a cambio estaba enviando dos arrays.
 
 ```
 12:04
@@ -151,7 +144,7 @@ expect(received).toBe(expected) // Object.is equality
 31:1  error  Expected indentation of 2 spaces but found 3              indent
 
 ```
-* Error de indendacion de espaciado , identificado por linea de este tipo de error salieron varios la cual fueron verificados.
+* Error de indendacion de espaciado, identificado por lÍnea de este tipo de error salieron varios la cual fueron verificados.
 ```
   31:4  error  'filteredItems' is never reassigned. Use 'const' instead  prefer-const
 
