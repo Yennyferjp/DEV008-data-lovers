@@ -69,7 +69,7 @@ Como usuario quiero realizar una búsqueda de datos a través de filtro por cate
 
 ## Criterios de aceptación:
 * El filtro de categorías será representado por una caja desplegable que mostrará el listado completo de categorías disponibles.
-* Al hacer clic en el icono de filtrar, se mostrarán todas las categorías para que el usuario pueda seleccionar la que desee.
+* Al hacer clic en la barra desplegable de filtrar, se mostrarán todas las categorías para que el usuario pueda seleccionar la que desee.
 * Cuando el usuario elige una categoría, la página web mostrará únicamente los productos relacionados con dicha categoría, adaptando el menú según la selección realizada.
 * Si el usuario decide quitar el filtro de categoría, la página volverá a mostrar la página principal con el menú completo, sin ninguna categoría seleccionada.
  
