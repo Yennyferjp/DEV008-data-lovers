@@ -23,8 +23,8 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* padding: 10px; */
+    justify-content: space-between;
+    padding: 10px;
     position: relative;
 }
 
@@ -33,10 +33,10 @@
 }
 
 .search input {
-    width: 260px;
+    width: 300px;
     height: 50px;
     padding: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 /*BARRA MENU*/
@@ -45,7 +45,7 @@
     width: 100%;
     height: 60px;
     background: #997850;
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 .menu {
@@ -57,6 +57,7 @@
 nav {
     height: 100%;
 }
+
 nav>ul {
     height: 100%;
     display: flex;
@@ -105,6 +106,7 @@ nav>ul>li>a:hover {
     transform: scale(1.1);
     background-color: #FBCB94;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
 }
 
 /*SUBMENU*/
@@ -173,6 +175,9 @@ nav ul li ul li a:hover {
 }
 
 /*ESTILOS FILTRADO EN MENU*/
+
+
+
 #filtrar {
    
     display: block;
@@ -194,7 +199,8 @@ section>p {
    
 }
 
-#vermas {
+#vermas,
+#vermenos {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
@@ -222,6 +228,9 @@ section>p {
     background: #C7853A;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
+
+
+
 #sct {
     display: flex;
     cursor: pointer;
@@ -259,6 +268,12 @@ section>p {
 }
 
 #vermas:hover{
+    transform: scale(1.1);
+    background: #C7853A;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#vermenos:hover{
     transform: scale(1.1);
     background: #C7853A;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -421,7 +436,6 @@ h3 {
     padding: 2% 0% 2% 10%;
 }
 
-/*ESTILO FOOTER*/
 
 
 #check__menu{
@@ -460,8 +474,11 @@ h3 {
     }
 }
 
-@media screen and (m-width: 380px) {
+@media screen and (max-width: 720px) {
 
+    .header__superior {
+        padding: 10px;
+    }
 
     .logo img {
         width: 250px;
@@ -469,15 +486,14 @@ h3 {
 
     nav>ul {
         flex-direction: column;
-        background-color: #D9A557;
+        background-color: #5e4732;
         position: fixed;
         left: 0;
         top: 158px;
-        width: 100%;
-        height: 0px;
+        width: 25%%;
         transition: all 300ms ease;
         z-index: 100;
-        opacity: 0;
+        opacity: 0.5;
         visibility: hidden;
     }
 
@@ -488,6 +504,7 @@ h3 {
 
     nav ul li ul {
         left: 90px;
+        
     }
 
     nav>ul>li:hover ul {
@@ -525,6 +542,8 @@ h3 {
         
     }
 
+
+
     #menu-items {
         justify-content: space-between;
         display: flex;
@@ -543,24 +562,35 @@ h3 {
 }
 
 /* Estilos para pantallas más pequeñas */
-
 @media (max-width: 550px) {
     .header__superior {
         display: flex;
        flex-direction: column;
     }
-
     .logo img {
         flex: auto;
+    }
+    .search input {
+        width: 220px;
+        height: 30px;
+        padding: 5px;
+        font-size: 1rem;
     }
     .txt-secundario{
         display: none;
     }
+
+    .title-testimonios {
+        text-align: center;
+        
+    }
 }
-@media (max-width: 1400px) {
+
+
+@media (max-width: 768px) {
     #menu-items {
         flex-direction: column;
-        align-items:center;
+        align-items: center;
     }
 
     .menu-item {
@@ -576,7 +606,7 @@ h3 {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
     .menu-item {
         flex-basis: calc(33.33% - 20px);
         margin: 10px;
@@ -591,13 +621,6 @@ h3 {
 }
 
 /*FILTRADO  */
-@media (min-width: 600px) {
-    .testimonials {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
 @media screen and (max-width: 806px) {
     .testimonials {
         flex: 100%;
@@ -646,9 +669,9 @@ h3 {
 
 }
 
-h1{
+h1 {
     color: #614C32;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .title-testimonios {
@@ -670,9 +693,7 @@ footer {
     footer {
         position: static;
     }
-    header {
-        padding-top: 30px;
-    }
+  
 }
 
 .footer-distributed {
@@ -681,7 +702,7 @@ footer {
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 10px;
+    padding: 50px 50px 60px 50px;
     
 }
 
